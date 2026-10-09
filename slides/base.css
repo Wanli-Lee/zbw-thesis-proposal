@@ -103,3 +103,14 @@ body {
 .toc-no { position: absolute; left: 330px; width: 80px; height: 64px; border-radius: 10px;
   font-size: 26px; font-weight: 900; line-height: 64px; text-align: center; color: #fff; }
 .toc-it { position: absolute; left: 432px; width: 500px; height: 64px; font-size: 24px; font-weight: 700; line-height: 64px; }
+
+/* ---------- v6：学长式导语、问题/方法、思维导图 ---------- */
+.lead { position: absolute; font-size: 20px; font-weight: 700; color: #1F1A22; line-height: 1.6; text-align: center; }
+.lead .k { color: var(--bad); }
+.lead .p { color: var(--purple); }
+.qa { position: absolute; font-size: 15px; line-height: 1.6; color: #1F1A22; }
+.qa .lab { color: var(--bad); font-weight: 700; }
+.mm { position: absolute; border-radius: 10px; font-size: 17px; font-weight: 700; line-height: 1.3; text-align: center; color: #fff; }
+.ln { position: absolute; background: #B9A6C0; }
+.lf { position: absolute; font-size: 14.5px; line-height: 34px; color: #4A4450; }
+.lf b { color: #1F1A22; }

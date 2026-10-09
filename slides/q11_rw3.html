@@ -1,0 +1,44 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"></head>
+<body data-layout="content" data-notes="混合模态方法：CoAct-1 让 GUI 操作员与程序员协作，OSWorld-MCP 在 GUI 之外提供工具，GUI-Genesis 将应用重建为可验证环境。右侧对照说明，在以 GUI 为主的 OSWorld 上，同一模型仅用文本通道即可以约一半步数取得相当的成功率，说明两类模态各有优势。不足在于第二模态多为辅助，任务未强制协同、只看结果判分；可验证环境局限于单一界面。">
+<img class="tpl" src="../bg/content.png">
+<div class="slide">
+  <div class="title">二、国内外研究现状</div>
+
+  <div class="sub">□ 混合模态方法：混合智能体与可验证训练环境</div>
+  <div class="sub-l"></div>
+  <div class="chip" style="left:1168px; top:108px; width:64px; padding:0; text-align:center; background:#1F6F8B;">视觉</div>
+  <div class="chip" style="left:1096px; top:108px; width:64px; padding:0; text-align:center; background:#660874;">文本</div>
+  <div class="fig" style="left:48px; top:150px; width:300px; height:334px;"></div>
+  <img class="img" src="../img/ref_coact.png" style="left:54px; top:156px; width:288px; height:288px;">
+  <div class="figcap" style="left:54px; top:448px; width:288px;">CoAct-1：GUI 操作员 + 程序员 [Song+, ICLR 26]</div>
+
+  <div class="fig" style="left:364px; top:150px; width:300px; height:334px;"></div>
+  <img class="img" src="../img/ref_osworldmcp.png" style="left:370px; top:156px; width:288px; height:288px;">
+  <div class="figcap" style="left:370px; top:448px; width:288px;">OSWorld-MCP：GUI 之外提供工具 [Jia+, 2025]</div>
+
+  <div class="fig" style="left:680px; top:150px; width:300px; height:334px;"></div>
+  <img class="img" src="../img/ref_guigenesis.png" style="left:686px; top:156px; width:288px; height:288px;">
+  <div class="figcap" style="left:686px; top:448px; width:288px;">GUI-Genesis：重建应用为可验证环境 [Cao+, 2026]</div>
+
+  <div class="fig" style="left:996px; top:150px; width:236px; height:334px;"></div>
+  <div class="h c" style="left:996px; top:160px; width:236px; font-size:13px;">同一模型 · 同一任务集（OSWorld）</div>
+  <div class="bar" style="left:1016px; top:230px; width:36px; height:150px; background:#660874;"></div>
+  <div class="bar" style="left:1058px; top:233px; width:36px; height:147px; background:#1F6F8B;"></div>
+  <div class="t c" style="left:1008px; top:210px; width:52px; font-size:12px; font-weight:700;">79.1</div>
+  <div class="t c" style="left:1050px; top:213px; width:52px; font-size:12px; font-weight:700;">77.3</div>
+  <div class="bar" style="left:1130px; top:310px; width:36px; height:70px; background:#660874;"></div>
+  <div class="bar" style="left:1172px; top:238px; width:36px; height:142px; background:#1F6F8B;"></div>
+  <div class="t c" style="left:1122px; top:290px; width:52px; font-size:12px; font-weight:700;">14.3</div>
+  <div class="t c" style="left:1164px; top:218px; width:52px; font-size:12px; font-weight:700;">29.0</div>
+  <div class="abs" style="left:1010px; top:380px; width:206px; height:0; border-top:1.5px solid #D9D9DE;"></div>
+  <div class="t" style="left:1004px; top:386px; width:106px; font-size:12px; line-height:1.4; color:#4A4450; text-align:center;">成功率 %</div>
+  <div class="t" style="left:1116px; top:386px; width:106px; font-size:12px; line-height:1.4; color:#4A4450; text-align:center;">平均步数</div>
+  <div class="t" style="left:1000px; top:412px; width:228px; font-size:12px; line-height:1.5; color:#4A4450; text-align:center;"><b style="color:#660874;">■</b> 仅文本　<b style="color:#1F6F8B;">■</b> 仅视觉<br>文本通道以约一半步数取得相当成功率</div>
+  <div class="kp"></div>
+  <div class="kp-t">混合方向已经出现，但<b>缺少统一范式、可信评测与可验证的训练方法</b></div>
+  <div class="card" style="left:48px; top:492px; width:1184px; height:92px; border:2px solid #C0392B;"></div>
+  <div class="pc" style="left:66px; top:504px; width:1150px;"><span class="ok">优点：</span>混合动作空间缩短轨迹；以参考应用为 oracle 构建可验证环境的思路开始出现</div>
+  <div class="pc" style="left:66px; top:540px; width:1150px;"><span class="no">不足：</span>第二模态多为辅助（增益约 3–5 个百分点），任务未强制协同且仅依据结果判分；可验证环境局限于单一界面</div>
+
+</div>
+</body></html>

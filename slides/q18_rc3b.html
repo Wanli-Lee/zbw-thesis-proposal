@@ -1,0 +1,44 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"></head>
+<body data-layout="content" data-notes="训练流程分四步：从 GitHub 高质量开源应用构造复刻任务，覆盖五个平台并与评测集去重；用 Qwen3.8-Max 在隔离的虚拟机池中并发生成轨迹；用任务级行为 verifier 做拒绝采样，每平台 7000 条、共 3.5 万条；在 Qwen3.7-Plus 和持续预训练后的 Qwen-Flash 上监督微调。结果在五个分布外基准上一致提升，最高 17.9 个百分点；在研究二的 WeaveBench 上从 35.7 提升到 48.2，研究二与研究三形成闭环。结论是可验证环境中习得的行为可以迁移，引出研究四扩展环境规模。">
+<img class="tpl" src="../bg/content.png">
+<div class="slide">
+  <div class="title">三、课题研究内容</div>
+
+  <div class="sub">□ 课题三（续）：训练流程与实验结果</div>
+  <div class="sub-l"></div>
+  <div class="card soft" style="left:48px; top:150px; width:280px; height:100px;"></div>
+  <div class="h p" style="left:62px; top:158px; width:254px; font-size:15.5px;">① 复刻任务构造</div>
+  <div class="t" style="left:62px; top:186px; width:254px; font-size:12.5px; line-height:1.5; color:#1F1A22;">GitHub 高质量开源 GUI 应用，覆盖 Ubuntu / macOS / Windows / Android / Web，与评测集去重</div>
+
+  <div class="card soft" style="left:349px; top:150px; width:280px; height:100px;"></div>
+  <div class="h p" style="left:363px; top:158px; width:254px; font-size:15.5px;">② 轨迹生成</div>
+  <div class="t" style="left:363px; top:186px; width:254px; font-size:12.5px; line-height:1.5; color:#1F1A22;">Qwen3.8-Max 在隔离虚拟机池中并发执行"探索—实现—构建运行—核验修正"</div>
+
+  <div class="card soft" style="left:650px; top:150px; width:280px; height:100px;"></div>
+  <div class="h p" style="left:664px; top:158px; width:254px; font-size:15.5px;">③ 可验证筛选</div>
+  <div class="t" style="left:664px; top:186px; width:254px; font-size:12.5px; line-height:1.5; color:#1F1A22;">以任务级行为 verifier 拒绝采样，每平台取 7,000 条，共 3.5 万条轨迹</div>
+
+  <div class="card soft" style="left:951px; top:150px; width:280px; height:100px;"></div>
+  <div class="h p" style="left:965px; top:158px; width:254px; font-size:15.5px;">④ 模型后训练</div>
+  <div class="t" style="left:965px; top:186px; width:254px; font-size:12.5px; line-height:1.5; color:#1F1A22;">同一数据分别监督微调 Qwen3.7-Plus 与持续预训练（CPT）后的 Qwen-Flash</div>
+
+  <div class="t c" style="left:326px; top:186px; width:24px; font-size:18px; color:#81308C;">➜</div>
+  <div class="t c" style="left:627px; top:186px; width:24px; font-size:18px; color:#81308C;">➜</div>
+  <div class="t c" style="left:928px; top:186px; width:24px; font-size:18px; color:#81308C;">➜</div>
+  <div class="fig" style="left:48px; top:264px; width:820px; height:318px;"></div>
+  <img class="img" src="../img/rw_fig5_transfer.png" style="left:54px; top:270px; width:808px; height:272px;">
+  <div class="figcap" style="left:54px; top:546px; width:808px;">迁移到 5 个分布外基准（代码、视觉代码、混合计算机操作）：两种初始化均一致提升</div>
+
+  <div class="num " style="left:892px; top:270px; width:340px; font-size:24px;">250 题 · 5 平台</div>
+  <div class="cap" style="left:892px; top:300px; width:340px; font-size:12.5px;">RecreationBench 评测集</div>
+  <div class="num rd" style="left:892px; top:348px; width:340px; font-size:24px;">2.8%</div>
+  <div class="cap" style="left:892px; top:378px; width:340px; font-size:12.5px;">最强模型全部通过的题目比例</div>
+  <div class="num g" style="left:892px; top:426px; width:340px; font-size:24px;">+17.9 pp</div>
+  <div class="cap" style="left:892px; top:456px; width:340px; font-size:12.5px;">分布外基准最大提升</div>
+  <div class="num g" style="left:892px; top:504px; width:340px; font-size:24px;">35.7 → 48.2</div>
+  <div class="cap" style="left:892px; top:534px; width:340px; font-size:12.5px;">WeaveBench（研究二）上的提升</div>
+  <div class="kp"></div>
+  <div class="kp-t">结论：可验证环境中习得的混合行为模式可迁移至分布外任务 → <b>研究四扩展环境的领域与规模</b></div>
+
+</div>
+</body></html>

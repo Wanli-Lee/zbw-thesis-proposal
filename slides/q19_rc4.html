@@ -1,0 +1,25 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"></head>
+<body data-layout="content" data-notes="课题四是后续主体工作：把研究三验证过的可验证环境方法扩展到金融、法律、电商、医疗等行业领域。分三步：App Mock 仿真行业业务系统；以脱敏真实数据驱动环境状态与事件；构造 SFT 与 RL 任务流水线。verifier 以数据库状态为准，研究一的压缩方法用于降低 RL rollout 开销，四项研究由此形成闭环。">
+<img class="tpl" src="../bg/content.png">
+<div class="slide">
+  <div class="title">三、课题研究内容</div>
+
+  <div class="sub">□ 课题四：面向多领域的可验证交互环境规模化构建（待完成）</div>
+  <div class="sub-l"></div>
+  <div class="chip" style="left:1136px; top:108px; width:96px; padding:0; text-align:center; background:#C0392B;">环境扩展</div>
+  <div class="chip" style="left:1064px; top:108px; width:64px; padding:0; text-align:center; background:#1F6F8B;">视觉</div>
+  <div class="chip" style="left:992px; top:108px; width:64px; padding:0; text-align:center; background:#660874;">文本</div>
+  <div class="qa" style="left:48px; top:148px; width:1184px; font-size:15px;"><span class="lab">■ 问题：</span>复刻环境覆盖的软件类型有限；金融、法律、电商、医疗等行业流程依赖私有系统与真实业务数据，缺少可交互、可验证的训练环境</div>
+  <div class="qa" style="left:48px; top:176px; width:1184px; font-size:15px;"><span class="lab">■ 解决方法：</span>① <b>App Mock</b>：仿真行业业务系统；② <b>真实数据驱动</b>：以脱敏数据驱动状态与事件演化；③ <b>SFT &amp; RL 任务构造流水线</b></div>
+  <div class="fig" style="left:48px; top:214px; width:700px; height:426px;"></div>
+  <img class="img" src="../img/ac_scaling_framework.png" style="left:54px; top:220px; width:688px; height:380px;">
+  <div class="figcap" style="left:54px; top:604px; width:688px;">可验证环境规模化构建流程（示意图）</div>
+
+  <div class="fig" style="left:764px; top:214px; width:468px; height:300px;"></div>
+  <img class="img" src="../img/ac_domain_grid.png" style="left:770px; top:220px; width:456px; height:254px;">
+  <div class="figcap" style="left:770px; top:478px; width:456px;">目标领域：金融 · 法律 · 电商 · 医疗健康 · 办公协作 · 工程（示意图）</div>
+
+  <div class="t" style="left:764px; top:526px; width:468px; font-size:13.5px; line-height:1.65; color:#1F1A22;">• 状态优先的 verifier：以数据库状态校验结果，抑制奖励利用<br>• 事件依附业务动作，支持长程、跨应用的协作任务<br>• 研究一的压缩方法用于降低强化学习 rollout 开销</div>
+
+</div>
+</body></html>
