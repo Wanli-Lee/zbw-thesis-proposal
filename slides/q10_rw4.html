@@ -1,0 +1,37 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"></head>
+<body data-layout="content" data-notes="小结：文本模态精确高效、可验证，但看不见渲染；视觉模态通用、看得见，但贵、看不到隐藏状态、缺 verifier。两者互补，混合使用时有三个难题：看得贵、测不准、练不出，分别对应研究一、研究二、研究三和研究四。">
+<img class="tpl" src="../bg/content.png">
+<div class="slide">
+  <div class="title">二、国内外研究现状</div>
+
+  <div class="card" style="left:48px; top:154px; width:580px; height:170px; border:2px solid #660874;"></div>
+  <div class="chip" style="left:64px; top:142px; background:#660874;">文本模态：CLI · Coding</div>
+  <div class="t" style="left:66px; top:176px; width:544px; font-size:14px; line-height:1.7; color:#1E7B5A;">✓ 精确、高效、状态可读<br>✓ 单元测试即可验证奖励</div>
+  <div class="t" style="left:66px; top:250px; width:544px; font-size:14px; line-height:1.7; color:#C0392B;">✗ 看不见渲染结果<br>✗ 只能处理有接口的软件</div>
+
+  <div class="card" style="left:652px; top:154px; width:580px; height:170px; border:2px solid #1F6F8B;"></div>
+  <div class="chip" style="left:668px; top:142px; background:#1F6F8B;">视觉模态：GUI</div>
+  <div class="t" style="left:670px; top:176px; width:544px; font-size:14px; line-height:1.7; color:#1E7B5A;">✓ 任何软件都能操作<br>✓ 看得见渲染与交互反馈</div>
+  <div class="t" style="left:670px; top:250px; width:544px; font-size:14px; line-height:1.7; color:#C0392B;">✗ 截图开销大、步数多<br>✗ 看不到隐藏状态，缺天然 verifier</div>
+
+  <div class="t c" style="left:48px; top:330px; width:1184px; font-size:15px; font-weight:700; color:#660874;">两类模态互补 → 混合使用时的三个难题</div>
+  <div class="card bad" style="left:48px; top:366px; width:380px; height:150px;"></div>
+  <div class="chip r" style="left:64px; top:380px;">看得贵</div>
+  <div class="t" style="left:64px; top:416px; width:348px; font-size:13.5px; line-height:1.55;">视觉模态的长程截图 token / KV 膨胀，通用压缩不适配 GUI 的帧间冗余与 2D 布局</div>
+  <div class="t" style="left:64px; top:482px; width:348px; font-size:14px; font-weight:700; color:#660874;">→ 研究一</div>
+
+  <div class="card bad" style="left:450px; top:366px; width:380px; height:150px;"></div>
+  <div class="chip r" style="left:466px; top:380px;">测不准</div>
+  <div class="t" style="left:466px; top:416px; width:348px; font-size:13.5px; line-height:1.55;">缺"任务强制两类模态协同、真实运行时、审计过程"的长程评测</div>
+  <div class="t" style="left:466px; top:482px; width:348px; font-size:14px; font-weight:700; color:#660874;">→ 研究二</div>
+
+  <div class="card bad" style="left:852px; top:366px; width:380px; height:150px;"></div>
+  <div class="chip r" style="left:868px; top:380px;">练不出</div>
+  <div class="t" style="left:868px; top:416px; width:348px; font-size:13.5px; line-height:1.55;">GUI 无天然 verifier，缺可验证、可规模化的混合训练环境</div>
+  <div class="t" style="left:868px; top:482px; width:348px; font-size:14px; font-weight:700; color:#660874;">→ 研究三、研究四</div>
+
+  <div class="kp"></div>
+  <div class="kp-t">本课题围绕文本 + 视觉的混合能力，依次解决<b>看得贵、测不准、练不出</b></div>
+
+</div>
+</body></html>

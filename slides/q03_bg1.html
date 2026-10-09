@@ -1,35 +1,38 @@
 <!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"></head>
-<body data-layout="content" data-notes="通用数字智能体用三种能力完成真实数字工作：CLI 操作系统、Coding 构建软件、GUI 看屏操作。左侧是 WeaveBench 的真实轨迹：在 Godot 里看画面找 bug，再改源码，再渲染验证。2026 年这三种能力在产品上合流，computer use 成为基座模型的核心能力。">
+<body data-layout="content" data-notes="通用数字智能体有三种场景能力：CLI 操作系统、Coding 构建软件，这两种以文本为模态；GUI 看屏操作，以视觉为模态。左侧 Godot 轨迹里，智能体看画面找 bug、改源码、再渲染验证，文本与视觉交织。产品上三种能力已合进同一个智能体。">
 <img class="tpl" src="../bg/content.png">
 <div class="slide">
   <div class="title">一、研究背景和选题意义</div>
 
-  <div class="sub">通用数字智能体：用 CLI、代码与 GUI 完成真实数字工作</div>
+  <div class="sub">通用数字智能体：三种场景能力，两类模态</div>
   <div class="sub-l"></div>
   <div class="fig" style="left:48px; top:154px; width:640px; height:420px;"></div>
-  <video class="img" src="../video/godot_5x.mp4" poster="../img/godot_5x_poster.jpg" style="left:54px; top:160px; width:628px; height:374px;"></video>
+  <video class="img" src="../video/godot_5x.mp4" poster="../img/godot_5x_poster.jpg" controls muted loop playsinline preload="none" style="left:54px; top:160px; width:628px; height:374px;"></video>
   <div class="figcap" style="left:54px; top:538px; width:628px;">真实轨迹（WeaveBench · Godot 游戏调试，5×）：看画面定位 bug ↔ 改场景源码 ↔ 再渲染验证</div>
 
   <div class="card soft" style="left:708px; top:154px; width:524px; height:96px;"></div>
-  <div class="h p" style="left:724px; top:166px; width:492px; font-size:17px;">CLI：操作系统</div>
+  <div class="chip" style="left:1152px; top:166px; width:64px; padding:0; text-align:center; background:#660874;">文本</div>
+  <div class="h p" style="left:724px; top:166px; width:414px; font-size:17px;">CLI：操作系统</div>
   <div class="t" style="left:724px; top:194px; width:492px; font-size:13.5px; line-height:1.5;">终端命令读写文件、日志、进程与服务</div>
   <div class="t" style="left:724px; top:218px; width:492px; font-size:12.5px; line-height:1.5; color:#8A8490;">Terminal-Bench · OpenClaw</div>
 
   <div class="card soft" style="left:708px; top:262px; width:524px; height:96px;"></div>
-  <div class="h p" style="left:724px; top:274px; width:492px; font-size:17px;">Coding：构建软件</div>
+  <div class="chip" style="left:1152px; top:274px; width:64px; padding:0; text-align:center; background:#660874;">文本</div>
+  <div class="h p" style="left:724px; top:274px; width:414px; font-size:17px;">Coding：构建软件</div>
   <div class="t" style="left:724px; top:302px; width:492px; font-size:13.5px; line-height:1.5;">编写、构建、运行与测试程序</div>
   <div class="t" style="left:724px; top:326px; width:492px; font-size:12.5px; line-height:1.5; color:#8A8490;">SWE-bench · Claude Code · Codex</div>
 
   <div class="card soft" style="left:708px; top:370px; width:524px; height:96px;"></div>
-  <div class="h p" style="left:724px; top:382px; width:492px; font-size:17px;">GUI：看屏操作</div>
+  <div class="chip" style="left:1152px; top:382px; width:64px; padding:0; text-align:center; background:#1F6F8B;">视觉</div>
+  <div class="h p" style="left:724px; top:382px; width:414px; font-size:17px;">GUI：看屏操作</div>
   <div class="t" style="left:724px; top:410px; width:492px; font-size:13.5px; line-height:1.5;">截图感知 + 鼠标键盘，任何软件都能用</div>
   <div class="t" style="left:724px; top:434px; width:492px; font-size:12.5px; line-height:1.5; color:#8A8490;">OSWorld · UI-TARS</div>
 
   <div class="card dark" style="left:708px; top:478px; width:524px; height:96px;"></div>
-  <div class="h w" style="left:724px; top:490px; width:490px; font-size:16px;">2026：三种能力在产品上合流</div>
-  <div class="t" style="left:724px; top:520px; width:492px; font-size:13px; line-height:1.5; color:#EADCEE;">Claude Cowork（01）· Codex 后台 computer use（04）· Qwen3.8-Max "Coding and Cowork"（08）</div>
+  <div class="h w" style="left:724px; top:490px; width:490px; font-size:16px;">真实工作：文本与视觉交织</div>
+  <div class="t" style="left:724px; top:520px; width:492px; font-size:13px; line-height:1.5; color:#EADCEE;">Claude Cowork · Codex 后台 computer use · Qwen3.8-Max "Coding and Cowork" 已把三种能力合进同一个智能体</div>
   <div class="kp"></div>
-  <div class="kp-t">computer use 正成为基座模型的核心能力：关键不再是单项能力，而是<b>在一条轨迹里编排三者</b></div>
+  <div class="kp-t">关键不在单项能力，而在<b>一条轨迹里按需切换文本与视觉</b>：该写代码时写，该看画面时看</div>
 
 </div>
 </body></html>

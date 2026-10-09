@@ -1,0 +1,26 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"></head>
+<body data-layout="content" data-notes="视觉模态的 GUI 智能体：任何软件都能操作，OSWorld 两年从 12% 到 80% 以上。但截图开销大、看不到隐藏状态；FastV、SnapKV 等通用压缩方法不适配 GUI 的结构；GUI 也没有天然的 verifier。">
+<img class="tpl" src="../bg/content.png">
+<div class="slide">
+  <div class="title">二、国内外研究现状</div>
+
+  <div class="sub">视觉模态：GUI 智能体与高效视觉推理</div>
+  <div class="sub-l"></div>
+  <div class="chip" style="left:1168px; top:108px; width:64px; padding:0; text-align:center; background:#1F6F8B;">视觉</div>
+  <div class="fig" style="left:48px; top:154px; width:440px; height:330px;"></div>
+  <img class="img" src="../img/ref_uitars2_demo.png" style="left:54px; top:160px; width:428px; height:284px;">
+  <div class="figcap" style="left:54px; top:448px; width:428px;">UI-TARS-2：原生 GUI 智能体 + 多轮 RL [ByteDance Seed, 2025]</div>
+
+  <div class="fig" style="left:504px; top:154px; width:380px; height:330px;"></div>
+  <img class="img" src="../img/ref_fastv.png" style="left:510px; top:160px; width:368px; height:284px;">
+  <div class="figcap" style="left:510px; top:448px; width:368px;">FastV：视觉 token 剪枝 [Chen et al., ECCV 2024]</div>
+
+  <div class="fig" style="left:900px; top:154px; width:332px; height:330px;"></div>
+  <img class="img" src="../img/ref_snapkv.png" style="left:906px; top:160px; width:320px; height:284px;">
+  <div class="figcap" style="left:906px; top:448px; width:320px;">SnapKV：KV 缓存压缩 [Li et al., NeurIPS 2024]</div>
+
+  <div class="pc" style="left:48px; top:500px; width:1184px;"><span class="ok">优点：</span>任何软件都能操作，看得见渲染与交互；OSWorld 两年 12% → 80%+，超过人类水平；token 剪枝、KV 压缩降低推理开销</div>
+  <div class="pc" style="left:48px; top:530px; width:1184px;"><span class="no">不足：</span>高分辨率截图 × 长历史开销大、步数多、看不到文件 / 进程等隐藏状态；通用压缩方法忽视 GUI 的帧间冗余与 2D 布局；缺天然 verifier</div>
+
+</div>
+</body></html>
