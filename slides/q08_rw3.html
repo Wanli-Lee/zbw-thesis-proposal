@@ -1,0 +1,44 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"></head>
+<body data-layout="content" data-notes="GUI 智能体看屏操作，任何软件都能用，OSWorld 两年从 12% 到 80% 以上。但截图贵、步数多、看不到隐藏状态。右侧是 WeaveBench 附录的受控对照：同模型同任务，纯 CLI 以一半步数打平纯视觉。说明纯 GUI 既不够也不必，应该混合。">
+<img class="tpl" src="../bg/content.png">
+<div class="slide">
+  <div class="title">二、国内外研究现状</div>
+
+  <div class="sub">GUI 智能体：看屏幕、点鼠标</div>
+  <div class="sub-l"></div>
+  <div class="chip o" style="left:872px; top:108px; width:62px; padding:0; text-align:center; color:#B9AFC0; border-color:#D9D2DC;">CLI</div>
+  <div class="t c" style="left:934px; top:108px; width:24px; font-size:14px; line-height:26px; color:#B9AFC0;">→</div>
+  <div class="chip o" style="left:958px; top:108px; width:78px; padding:0; text-align:center; color:#B9AFC0; border-color:#D9D2DC;">Coding</div>
+  <div class="t c" style="left:1036px; top:108px; width:24px; font-size:14px; line-height:26px; color:#B9AFC0;">→</div>
+  <div class="chip" style="left:1060px; top:108px; width:62px; padding:0; text-align:center;">GUI</div>
+  <div class="t c" style="left:1122px; top:108px; width:24px; font-size:14px; line-height:26px; color:#B9AFC0;">→</div>
+  <div class="chip o" style="left:1146px; top:108px; width:62px; padding:0; text-align:center; color:#B9AFC0; border-color:#D9D2DC;">混合</div>
+  <div class="fig" style="left:48px; top:154px; width:420px; height:330px;"></div>
+  <img class="img" src="../img/ref_osworld.png" style="left:54px; top:160px; width:408px; height:284px;">
+  <div class="figcap" style="left:54px; top:448px; width:408px;">OSWorld：真实操作系统可执行评测 [Xie et al., NeurIPS 2024]</div>
+
+  <div class="fig" style="left:484px; top:154px; width:420px; height:330px;"></div>
+  <img class="img" src="../img/ref_uitars2_demo.png" style="left:490px; top:160px; width:408px; height:284px;">
+  <div class="figcap" style="left:490px; top:448px; width:408px;">UI-TARS-2：原生 GUI 智能体 + 多轮 RL [ByteDance Seed, 2025]</div>
+
+  <div class="fig" style="left:920px; top:154px; width:312px; height:330px;"></div>
+  <div class="h c" style="left:920px; top:164px; width:312px; font-size:13.5px;">同模型、同任务（OSWorld）</div>
+  <div class="bar" style="left:960px; top:230px; width:44px; height:158px; background:#660874;"></div>
+  <div class="bar" style="left:1012px; top:233px; width:44px; height:155px; background:#C9BFD0;"></div>
+  <div class="t c" style="left:950px; top:208px; width:64px; font-size:13px; font-weight:700;">79.1%</div>
+  <div class="t c" style="left:1002px; top:211px; width:64px; font-size:13px; font-weight:700;">77.3%</div>
+  <div class="bar" style="left:1100px; top:314px; width:44px; height:74px; background:#660874;"></div>
+  <div class="bar" style="left:1152px; top:238px; width:44px; height:150px; background:#C9BFD0;"></div>
+  <div class="t c" style="left:1090px; top:292px; width:64px; font-size:13px; font-weight:700;">14.3</div>
+  <div class="t c" style="left:1142px; top:216px; width:64px; font-size:13px; font-weight:700;">29.0</div>
+  <div class="abs" style="left:948px; top:388px; width:260px; height:0; border-top:1.5px solid #D9D9DE;"></div>
+  <div class="t" style="left:946px; top:394px; width:124px; font-size:12.5px; line-height:1.4; color:#4A4450; text-align:center;">通过率</div>
+  <div class="t" style="left:1086px; top:394px; width:124px; font-size:12.5px; line-height:1.4; color:#4A4450; text-align:center;">平均步数</div>
+  <div class="t" style="left:934px; top:420px; width:290px; font-size:12.5px; line-height:1.5; color:#4A4450; text-align:center;"><b style="color:#660874;">■</b> 纯 CLI　<b style="color:#C9BFD0;">■</b> 纯视觉<br>CLI 以一半步数打平视觉</div>
+  <div class="pc" style="left:48px; top:500px; width:1184px;"><span class="ok">优点：</span>任何软件都能操作；OSWorld 两年 12% → 80%+，超过人类水平</div>
+  <div class="pc" style="left:48px; top:530px; width:1184px;"><span class="no">不足：</span>截图 token 开销大、步数多、看不到隐藏状态；纯 GUI 基准测的很多并非 GUI 能力</div>
+  <div class="kp"></div>
+  <div class="kp-t">→ 纯 GUI 既不够、也不必：需要 <b>CLI、代码与 GUI 混合</b></div>
+
+</div>
+</body></html>

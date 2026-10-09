@@ -1,0 +1,35 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"></head>
+<body data-layout="content" data-notes="研究二针对测不准。WeaveBench 用真实部署的 CLI 运行时加最小 GUI 插件，只收录通道不可替代的长程任务，轨迹感知判官审计全过程。结论：瓶颈是编排与自主验证，而不是感知，而且只看结果的奖励一定会被钻空子。这引出研究三：需要天然混合、又能可验证打分的训练场景。">
+<img class="tpl" src="../bg/content.png">
+<div class="slide">
+  <div class="title">三、课题研究内容</div>
+
+  <div class="sub">研究二：WeaveBench —— 定义并度量混合范式</div>
+  <div class="sub-l"></div>
+  <div class="chip o" style="left:872px; top:108px; width:62px; padding:0; text-align:center; color:#B9AFC0; border-color:#D9D2DC;">CLI</div>
+  <div class="t c" style="left:934px; top:108px; width:24px; font-size:14px; line-height:26px; color:#B9AFC0;">→</div>
+  <div class="chip o" style="left:958px; top:108px; width:78px; padding:0; text-align:center; color:#B9AFC0; border-color:#D9D2DC;">Coding</div>
+  <div class="t c" style="left:1036px; top:108px; width:24px; font-size:14px; line-height:26px; color:#B9AFC0;">→</div>
+  <div class="chip o" style="left:1060px; top:108px; width:62px; padding:0; text-align:center; color:#B9AFC0; border-color:#D9D2DC;">GUI</div>
+  <div class="t c" style="left:1122px; top:108px; width:24px; font-size:14px; line-height:26px; color:#B9AFC0;">→</div>
+  <div class="chip" style="left:1146px; top:108px; width:62px; padding:0; text-align:center;">混合</div>
+  <div class="chip r" style="left:742px; top:108px; width:120px; padding:0; text-align:center;">测不准</div>
+  <div class="fig" style="left:48px; top:154px; width:700px; height:380px;"></div>
+  <img class="img" src="../img/fig_overview_new-1.png" style="left:54px; top:160px; width:688px; height:334px;">
+  <div class="figcap" style="left:54px; top:498px; width:688px;"><b>WeaveBench</b>（共同一作 · EMNLP 2026）：真实运行时 + 通道必需任务 + 轨迹感知判官</div>
+
+  <div class="fig" style="left:764px; top:154px; width:468px; height:380px;"></div>
+  <img class="img" src="../img/fig_failure_mechanism-1.png" style="left:770px; top:160px; width:456px; height:334px;">
+  <div class="figcap" style="left:770px; top:498px; width:456px;">1,735 个失败的归因：作弊刷分与长程纪律占 65.6%，视觉感知 &lt;4%</div>
+
+  <div class="num " style="left:48px; top:552px; width:280px; font-size:30px;">41.2%</div>
+  <div class="cap" style="left:48px; top:590px; width:280px;">最强组合通过率；同类模型 OSWorld &gt;78%</div>
+  <div class="num " style="left:344px; top:552px; width:280px; font-size:30px;">≤3.5%</div>
+  <div class="cap" style="left:344px; top:590px; width:280px;">只给 GUI 或只给 CLI；混合增益 +31.6 pp</div>
+  <div class="num rd" style="left:640px; top:552px; width:280px; font-size:30px;">−20 pp</div>
+  <div class="cap" style="left:640px; top:590px; width:280px;">轨迹审计修正结果判分虚高</div>
+  <div class="num rd" style="left:936px; top:552px; width:296px; font-size:30px;">65.6%</div>
+  <div class="cap" style="left:936px; top:590px; width:296px;">失败来自作弊 + 长程失控</div>
+
+</div>
+</body></html>

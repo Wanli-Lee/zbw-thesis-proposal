@@ -1,0 +1,105 @@
+@import url("../fonts/400.css");
+@import url("../fonts/500.css");
+@import url("../fonts/700.css");
+@import url("../fonts/900.css");
+
+/* 1280x720 = 33.867cm x 19.05cm；1px = 0.75pt。转换器读取计算后的样式生成可编辑 PPTX。
+   约定：.tpl 及其子元素只用于 HTML 预览（模板底图），不转换；
+   文本元素内只放行内内容（b / span / i / br），不要再嵌套块级元素。 */
+:root {
+  --purple: #660874;
+  --purple2: #81308C;
+  --purple-dark: #3A0745;
+  --soft: #F5EEF7;
+  --soft2: #EADCEE;
+  --ink: #1F1A22;
+  --ink2: #4A4450;
+  --muted: #8A8490;
+  --line: #E2D8E6;
+  --bad: #C0392B;
+  --bad-soft: #FBE9E6;
+  --good: #1E7B5A;
+  --good-soft: #E3F2EC;
+  --amber: #B7791F;
+  --amber-soft: #FDF3DF;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 1280px; height: 720px; overflow: hidden; }
+body {
+  font-family: "Microsoft YaHei", "Noto Sans SC", sans-serif;
+  color: var(--ink); -webkit-font-smoothing: antialiased; position: relative;
+}
+.tpl { position: absolute; left: 0; top: 0; width: 1280px; height: 720px; z-index: 0; }
+.slide { position: absolute; left: 0; top: 0; width: 1280px; height: 720px; z-index: 1; }
+
+/* ---------- 内容页骨架 ---------- */
+.title {
+  position: absolute; left: 104px; top: 20px; width: 960px; height: 66px;
+  font-size: 29px; font-weight: 700; color: var(--purple); line-height: 66px; letter-spacing: 0.5px;
+}
+.body { position: absolute; left: 48px; top: 112px; width: 1184px; height: 466px; }
+.kp {
+  position: absolute; left: 48px; top: 592px; width: 1184px; height: 46px;
+  background: var(--purple-dark); border-radius: 10px;
+}
+.kp-t {
+  position: absolute; left: 66px; top: 592px; width: 1150px; height: 46px;
+  font-size: 18px; line-height: 46px; color: #fff; font-weight: 500;
+}
+.kp-t b { color: #F6C8FF; font-weight: 700; }
+.foot {
+  position: absolute; left: 48px; top: 670px; width: 860px; height: 22px;
+  font-size: 12.5px; color: var(--muted); line-height: 22px;
+}
+
+/* ---------- 通用组件（全部绝对定位，坐标写在行内 style） ---------- */
+.abs { position: absolute; }
+.card { position: absolute; background: #fff; border: 1.5px solid var(--line); border-radius: 12px; }
+.card.soft { background: var(--soft); border-color: var(--soft); }
+.card.bad { background: var(--bad-soft); border-color: var(--bad-soft); }
+.card.good { background: var(--good-soft); border-color: var(--good-soft); }
+.card.amber { background: var(--amber-soft); border-color: var(--amber-soft); }
+.card.dark { background: var(--purple); border-color: var(--purple); }
+.bar { position: absolute; border-radius: 4px; }
+
+.t { position: absolute; font-size: 16px; line-height: 1.5; color: var(--ink2); }
+.t b { color: var(--ink); font-weight: 700; }
+.t .hl { color: var(--purple); font-weight: 700; }
+.t .bad { color: var(--bad); font-weight: 700; }
+.t .good { color: var(--good); font-weight: 700; }
+.t .amb { color: var(--amber); font-weight: 700; }
+.t .mut { color: var(--muted); }
+.h { position: absolute; font-size: 19px; font-weight: 700; color: var(--ink); line-height: 1.35; }
+.h.p { color: var(--purple); }
+.h.w { color: #fff; }
+.chip {
+  position: absolute; height: 26px; padding: 0 14px; border-radius: 6px;
+  background: var(--purple); color: #fff; font-size: 14px; font-weight: 700; line-height: 26px;
+}
+.chip.o { background: #fff; color: var(--purple); border: 1.5px solid var(--purple); line-height: 23px; }
+.chip.g { background: var(--good); }
+.chip.r { background: var(--bad); }
+.num { position: absolute; font-size: 40px; font-weight: 900; color: var(--purple); line-height: 1.1; }
+.num.g { color: var(--good); }
+.num.rd { color: var(--bad); }
+.cap { position: absolute; font-size: 13.5px; color: var(--ink2); line-height: 1.35; }
+.c { text-align: center; }
+.r { text-align: right; }
+.img { position: absolute; object-fit: contain; }
+.src { position: absolute; font-size: 11.5px; color: var(--muted); }
+
+/* ---------- v3：学长版式（多图少字） ---------- */
+.sub { position: absolute; left: 48px; top: 104px; width: 1184px; height: 34px;
+  font-size: 20px; font-weight: 700; color: #1F1A22; line-height: 34px; }
+.sub-l { position: absolute; left: 48px; top: 138px; width: 72px; height: 3px; background: var(--purple); }
+.fig { position: absolute; background: #fff; border: 1px solid #E2D8E6; border-radius: 8px; }
+.figcap { position: absolute; font-size: 12.5px; line-height: 1.4; color: #4A4450; text-align: center; }
+.figcap b { color: #1F1A22; }
+.pc { position: absolute; font-size: 15px; line-height: 1.55; color: #1F1A22; }
+.pc .ok { color: #1E7B5A; font-weight: 700; }
+.pc .no { color: #C0392B; font-weight: 700; }
+.toc-row { position: absolute; left: 330px; width: 620px; height: 64px; border-radius: 10px; }
+.toc-no { position: absolute; left: 330px; width: 80px; height: 64px; border-radius: 10px;
+  font-size: 26px; font-weight: 900; line-height: 64px; text-align: center; color: #fff; }
+.toc-it { position: absolute; left: 432px; width: 500px; height: 64px; font-size: 24px; font-weight: 700; line-height: 64px; }

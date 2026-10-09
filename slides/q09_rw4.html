@@ -1,0 +1,34 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"></head>
+<body data-layout="content" data-notes="三种能力开始合流：CoAct-1 让 GUI 操作员和程序员协作，OSWorld-MCP 在 GUI 之外提供工具，GUI-Genesis 把 App 重建成可验证的训练环境。但现有混合基准里第二通道只是便利，只看结果判分容易被钻空子；GUI 没有天然 verifier，训练环境只覆盖单一界面。">
+<img class="tpl" src="../bg/content.png">
+<div class="slide">
+  <div class="title">二、国内外研究现状</div>
+
+  <div class="sub">混合智能体：三种能力合流</div>
+  <div class="sub-l"></div>
+  <div class="chip o" style="left:872px; top:108px; width:62px; padding:0; text-align:center; color:#B9AFC0; border-color:#D9D2DC;">CLI</div>
+  <div class="t c" style="left:934px; top:108px; width:24px; font-size:14px; line-height:26px; color:#B9AFC0;">→</div>
+  <div class="chip o" style="left:958px; top:108px; width:78px; padding:0; text-align:center; color:#B9AFC0; border-color:#D9D2DC;">Coding</div>
+  <div class="t c" style="left:1036px; top:108px; width:24px; font-size:14px; line-height:26px; color:#B9AFC0;">→</div>
+  <div class="chip o" style="left:1060px; top:108px; width:62px; padding:0; text-align:center; color:#B9AFC0; border-color:#D9D2DC;">GUI</div>
+  <div class="t c" style="left:1122px; top:108px; width:24px; font-size:14px; line-height:26px; color:#B9AFC0;">→</div>
+  <div class="chip" style="left:1146px; top:108px; width:62px; padding:0; text-align:center;">混合</div>
+  <div class="fig" style="left:48px; top:154px; width:400px; height:330px;"></div>
+  <img class="img" src="../img/ref_coact.png" style="left:54px; top:160px; width:388px; height:284px;">
+  <div class="figcap" style="left:54px; top:448px; width:388px;">CoAct-1：GUI 操作员 + 程序员协作 [Song et al., ICLR 2026]</div>
+
+  <div class="fig" style="left:464px; top:154px; width:420px; height:330px;"></div>
+  <img class="img" src="../img/ref_osworldmcp.png" style="left:470px; top:160px; width:408px; height:284px;">
+  <div class="figcap" style="left:470px; top:448px; width:408px;">OSWorld-MCP：GUI 之外提供 MCP 工具 [Jia et al., 2025]</div>
+
+  <div class="fig" style="left:900px; top:154px; width:332px; height:330px;"></div>
+  <img class="img" src="../img/ref_guigenesis.png" style="left:906px; top:160px; width:320px; height:284px;">
+  <div class="figcap" style="left:906px; top:448px; width:320px;">GUI-Genesis：重建 App 为可验证 RL 环境 [Cao et al., 2026]</div>
+
+  <div class="pc" style="left:48px; top:500px; width:1184px;"><span class="ok">优点：</span>混合动作空间减少步数；"参考即 oracle"开始用于构建可验证环境</div>
+  <div class="pc" style="left:48px; top:530px; width:1184px;"><span class="no">不足：</span><b>测不准</b>：第二通道多为"便利"（混合仅比单通道高 3–5 pp），且只看结果、易被 hack；<b>练不出</b>：GUI 无天然 verifier，环境只覆盖单一界面</div>
+  <div class="kp"></div>
+  <div class="kp-t">→ 合流后的新瓶颈：<b>测不准、练不出</b>；再加上 GUI 本身的<b>看得贵</b></div>
+
+</div>
+</body></html>
