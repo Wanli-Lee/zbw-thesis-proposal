@@ -16,25 +16,25 @@
 
   <div class="card soft" style="left:650px; top:150px; width:280px; height:100px;"></div>
   <div class="h p" style="left:664px; top:158px; width:254px; font-size:15.5px;">③ 可验证筛选</div>
-  <div class="t" style="left:664px; top:186px; width:254px; font-size:12.5px; line-height:1.5; color:#1F1A22;">以任务级行为 verifier 拒绝采样，每平台取 7,000 条，共 3.5 万条轨迹</div>
+  <div class="t" style="left:664px; top:186px; width:254px; font-size:12.5px; line-height:1.5; color:#1F1A22;">以任务级行为 verifier 拒绝采样（Rejection Sampling），每平台取 7,000 条，共 3.5 万条轨迹</div>
 
   <div class="card soft" style="left:951px; top:150px; width:280px; height:100px;"></div>
   <div class="h p" style="left:965px; top:158px; width:254px; font-size:15.5px;">④ 模型后训练</div>
-  <div class="t" style="left:965px; top:186px; width:254px; font-size:12.5px; line-height:1.5; color:#1F1A22;">同一数据分别监督微调 Qwen3.7-Plus 与持续预训练（CPT）后的 Qwen-Flash</div>
+  <div class="t" style="left:965px; top:186px; width:254px; font-size:12.5px; line-height:1.5; color:#1F1A22;">同一数据分别监督微调（SFT）Qwen3.7-Plus 与持续预训练（CPT）后的 Qwen-Flash</div>
 
   <div class="t c" style="left:326px; top:186px; width:24px; font-size:18px; color:#81308C;">➜</div>
   <div class="t c" style="left:627px; top:186px; width:24px; font-size:18px; color:#81308C;">➜</div>
   <div class="t c" style="left:928px; top:186px; width:24px; font-size:18px; color:#81308C;">➜</div>
   <div class="fig" style="left:48px; top:264px; width:820px; height:318px;"></div>
   <img class="img" src="../img/rw_fig5_transfer.png" style="left:54px; top:270px; width:808px; height:272px;">
-  <div class="figcap" style="left:54px; top:546px; width:808px;">迁移到 5 个分布外基准（代码、视觉代码、混合计算机操作）：两种初始化均一致提升</div>
+  <div class="figcap" style="left:54px; top:546px; width:808px;">迁移到 5 个分布外（OOD）基准（代码、视觉代码、混合计算机操作）：两种初始化均一致提升</div>
 
   <div class="num " style="left:892px; top:270px; width:340px; font-size:24px;">250 题 · 5 平台</div>
   <div class="cap" style="left:892px; top:300px; width:340px; font-size:12.5px;">RecreationBench 评测集</div>
   <div class="num rd" style="left:892px; top:348px; width:340px; font-size:24px;">2.8%</div>
   <div class="cap" style="left:892px; top:378px; width:340px; font-size:12.5px;">最强模型全部通过的题目比例</div>
   <div class="num g" style="left:892px; top:426px; width:340px; font-size:24px;">+17.9 pp</div>
-  <div class="cap" style="left:892px; top:456px; width:340px; font-size:12.5px;">分布外基准最大提升</div>
+  <div class="cap" style="left:892px; top:456px; width:340px; font-size:12.5px;">分布外（OOD）基准最大提升</div>
   <div class="num g" style="left:892px; top:504px; width:340px; font-size:24px;">35.7 → 48.2</div>
   <div class="cap" style="left:892px; top:534px; width:340px; font-size:12.5px;">WeaveBench（研究二）上的提升</div>
   <div class="kp"></div>
