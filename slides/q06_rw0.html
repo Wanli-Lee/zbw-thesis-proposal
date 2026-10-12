@@ -1,51 +1,65 @@
 <!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"></head>
-<body data-layout="content" data-notes="">
+<body data-layout="content" data-notes="国内外研究可分为四类：纯 CLI 能力方法，包括命令行智能体与代码智能体；纯 GUI 能力方法，包括原生 GUI 智能体与高效视觉推理；混合能力方法，包括多智能体协作、工具增强 GUI 与可验证环境构建；以及新兴的走向真实世界的智能体，包括个人智能体产品、物理世界生成与机器人使用。">
 <img class="tpl" src="../bg/content.png">
 <div class="slide">
   <div class="title">二、国内外研究现状</div>
 
   <div class="sub">□ 通用数字智能体方法</div>
   <div class="sub-l"></div>
-  <div class="abs" style="left:70px; top:340px; width:190px; height:60px; background:#3A0745; border-radius:10px;"></div>
-  <div class="h c" style="left:70px; top:340px; width:190px; font-size:18px; line-height:60px; color:#fff;">通用数字智能体</div>
-  <div class="abs" style="left:260px; top:370px; width:30px; height:2px; background:#B9A6C0;"></div>
-  <div class="abs" style="left:290px; top:200px; width:2px; height:342px; background:#B9A6C0;"></div>
-  <div class="abs" style="left:290px; top:200px; width:30px; height:2px; background:#B9A6C0;"></div>
-  <div class="abs" style="left:320px; top:174px; width:210px; height:52px; background:#660874; border-radius:10px;"></div>
-  <div class="h c" style="left:320px; top:174px; width:210px; font-size:17px; line-height:52px; color:#fff;">纯 CLI 能力方法</div>
-  <div class="abs" style="left:530px; top:200px; width:30px; height:2px; background:#B9A6C0;"></div>
-  <div class="abs" style="left:560px; top:175px; width:2px; height:52px; background:#B9A6C0;"></div>
-  <div class="abs" style="left:560px; top:175px; width:30px; height:2px; background:#B9A6C0;"></div>
-  <div class="abs" style="left:596px; top:158px; width:636px; height:34px; background:#F6F4F7; border-radius:8px;"></div>
-  <div class="lf" style="left:612px; top:158px; width:610px;"><b>命令行智能体（CLI Agent）</b>　Terminal-Bench [Merrill+, 2026] · Terminus · OpenClaw</div>
-  <div class="abs" style="left:560px; top:225px; width:30px; height:2px; background:#B9A6C0;"></div>
-  <div class="abs" style="left:596px; top:208px; width:636px; height:34px; background:#F6F4F7; border-radius:8px;"></div>
-  <div class="lf" style="left:612px; top:208px; width:610px;"><b>代码智能体（Coding Agent）</b>　SWE-agent [Yang+, NeurIPS 24] · SWE-Gym [Pan+, ICML 25]</div>
-  <div class="abs" style="left:290px; top:360px; width:30px; height:2px; background:#B9A6C0;"></div>
-  <div class="abs" style="left:320px; top:334px; width:210px; height:52px; background:#1F6F8B; border-radius:10px;"></div>
-  <div class="h c" style="left:320px; top:334px; width:210px; font-size:17px; line-height:52px; color:#fff;">纯 GUI 能力方法</div>
-  <div class="abs" style="left:530px; top:360px; width:30px; height:2px; background:#B9A6C0;"></div>
-  <div class="abs" style="left:560px; top:335px; width:2px; height:52px; background:#B9A6C0;"></div>
-  <div class="abs" style="left:560px; top:335px; width:30px; height:2px; background:#B9A6C0;"></div>
-  <div class="abs" style="left:596px; top:318px; width:636px; height:34px; background:#F6F4F7; border-radius:8px;"></div>
-  <div class="lf" style="left:612px; top:318px; width:610px;"><b>原生 GUI 智能体（GUI Agent）</b>　OSWorld [Xie+, NeurIPS 24] · UI-TARS-2 [Seed, 2025]</div>
-  <div class="abs" style="left:560px; top:385px; width:30px; height:2px; background:#B9A6C0;"></div>
-  <div class="abs" style="left:596px; top:368px; width:636px; height:34px; background:#F6F4F7; border-radius:8px;"></div>
-  <div class="lf" style="left:612px; top:368px; width:610px;"><b>高效视觉推理（Efficient Inference）</b>　FastV [Chen+, ECCV 24] · SnapKV [Li+, NeurIPS 24]</div>
-  <div class="abs" style="left:290px; top:540px; width:30px; height:2px; background:#B9A6C0;"></div>
-  <div class="abs" style="left:320px; top:514px; width:210px; height:52px; background:#B7791F; border-radius:10px;"></div>
-  <div class="h c" style="left:320px; top:514px; width:210px; font-size:17px; line-height:52px; color:#fff;">混合能力方法</div>
-  <div class="abs" style="left:530px; top:540px; width:30px; height:2px; background:#B9A6C0;"></div>
-  <div class="abs" style="left:560px; top:490px; width:2px; height:102px; background:#B9A6C0;"></div>
-  <div class="abs" style="left:560px; top:490px; width:30px; height:2px; background:#B9A6C0;"></div>
-  <div class="abs" style="left:596px; top:473px; width:636px; height:34px; background:#F6F4F7; border-radius:8px;"></div>
-  <div class="lf" style="left:612px; top:473px; width:610px;"><b>多智能体协作（Multi-Agent）</b>　CoAct-1：GUI 操作员 + 程序员 [Song+, ICLR 26]</div>
-  <div class="abs" style="left:560px; top:540px; width:30px; height:2px; background:#B9A6C0;"></div>
-  <div class="abs" style="left:596px; top:523px; width:636px; height:34px; background:#F6F4F7; border-radius:8px;"></div>
-  <div class="lf" style="left:612px; top:523px; width:610px;"><b>工具增强 GUI（Tool-Augmented）</b>　OSWorld-MCP [Jia+, 2025]</div>
-  <div class="abs" style="left:560px; top:590px; width:30px; height:2px; background:#B9A6C0;"></div>
-  <div class="abs" style="left:596px; top:573px; width:636px; height:34px; background:#F6F4F7; border-radius:8px;"></div>
-  <div class="lf" style="left:612px; top:573px; width:610px;"><b>可验证环境构建（Verifiable Env.）</b>　GUI-Genesis [Cao+, 2026]</div>
+  <div class="abs" style="left:66px; top:350px; width:190px; height:56px; background:#3A0745; border-radius:10px;"></div>
+  <div class="h c" style="left:66px; top:350px; width:190px; font-size:18px; line-height:56px; color:#fff;">通用数字智能体</div>
+  <div class="abs" style="left:256px; top:378px; width:34px; height:2px; background:#B9A6C0;"></div>
+  <div class="abs" style="left:290px; top:186px; width:2px; height:362px; background:#B9A6C0;"></div>
+  <div class="abs" style="left:290px; top:186px; width:30px; height:2px; background:#B9A6C0;"></div>
+  <div class="abs" style="left:320px; top:163px; width:210px; height:46px; background:#660874; border-radius:10px;"></div>
+  <div class="h c" style="left:320px; top:163px; width:210px; font-size:16px; line-height:46px; color:#fff;">纯 CLI 能力方法</div>
+  <div class="abs" style="left:530px; top:186px; width:30px; height:2px; background:#B9A6C0;"></div>
+  <div class="abs" style="left:560px; top:168px; width:2px; height:38px; background:#B9A6C0;"></div>
+  <div class="abs" style="left:560px; top:168px; width:30px; height:2px; background:#B9A6C0;"></div>
+  <div class="abs" style="left:596px; top:153px; width:636px; height:30px; background:#F6F4F7; border-radius:7px;"></div>
+  <div class="lf" style="left:610px; top:153px; width:614px; font-size:13.5px; line-height:30px;"><b>命令行智能体（CLI Agent）</b>　Terminal-Bench [Merrill+, 2026] · Terminus · OpenClaw</div>
+  <div class="abs" style="left:560px; top:204px; width:30px; height:2px; background:#B9A6C0;"></div>
+  <div class="abs" style="left:596px; top:189px; width:636px; height:30px; background:#F6F4F7; border-radius:7px;"></div>
+  <div class="lf" style="left:610px; top:189px; width:614px; font-size:13.5px; line-height:30px;"><b>代码智能体（Coding Agent）</b>　SWE-agent [Yang+, NeurIPS 24] · SWE-Gym [Pan+, ICML 25]</div>
+  <div class="abs" style="left:290px; top:282px; width:30px; height:2px; background:#B9A6C0;"></div>
+  <div class="abs" style="left:320px; top:259px; width:210px; height:46px; background:#1F6F8B; border-radius:10px;"></div>
+  <div class="h c" style="left:320px; top:259px; width:210px; font-size:16px; line-height:46px; color:#fff;">纯 GUI 能力方法</div>
+  <div class="abs" style="left:530px; top:282px; width:30px; height:2px; background:#B9A6C0;"></div>
+  <div class="abs" style="left:560px; top:264px; width:2px; height:38px; background:#B9A6C0;"></div>
+  <div class="abs" style="left:560px; top:264px; width:30px; height:2px; background:#B9A6C0;"></div>
+  <div class="abs" style="left:596px; top:249px; width:636px; height:30px; background:#F6F4F7; border-radius:7px;"></div>
+  <div class="lf" style="left:610px; top:249px; width:614px; font-size:13.5px; line-height:30px;"><b>原生 GUI 智能体（GUI Agent）</b>　OSWorld [Xie+, NeurIPS 24] · UI-TARS-2 [Seed, 2025]</div>
+  <div class="abs" style="left:560px; top:300px; width:30px; height:2px; background:#B9A6C0;"></div>
+  <div class="abs" style="left:596px; top:285px; width:636px; height:30px; background:#F6F4F7; border-radius:7px;"></div>
+  <div class="lf" style="left:610px; top:285px; width:614px; font-size:13.5px; line-height:30px;"><b>高效视觉推理（Efficient Inference）</b>　FastV [Chen+, ECCV 24] · SnapKV [Li+, NeurIPS 24]</div>
+  <div class="abs" style="left:290px; top:396px; width:30px; height:2px; background:#B9A6C0;"></div>
+  <div class="abs" style="left:320px; top:373px; width:210px; height:46px; background:#B7791F; border-radius:10px;"></div>
+  <div class="h c" style="left:320px; top:373px; width:210px; font-size:16px; line-height:46px; color:#fff;">混合能力方法</div>
+  <div class="abs" style="left:530px; top:396px; width:30px; height:2px; background:#B9A6C0;"></div>
+  <div class="abs" style="left:560px; top:360px; width:2px; height:74px; background:#B9A6C0;"></div>
+  <div class="abs" style="left:560px; top:360px; width:30px; height:2px; background:#B9A6C0;"></div>
+  <div class="abs" style="left:596px; top:345px; width:636px; height:30px; background:#F6F4F7; border-radius:7px;"></div>
+  <div class="lf" style="left:610px; top:345px; width:614px; font-size:13.5px; line-height:30px;"><b>多智能体协作（Multi-Agent）</b>　CoAct-1 [Song+, ICLR 26]</div>
+  <div class="abs" style="left:560px; top:396px; width:30px; height:2px; background:#B9A6C0;"></div>
+  <div class="abs" style="left:596px; top:381px; width:636px; height:30px; background:#F6F4F7; border-radius:7px;"></div>
+  <div class="lf" style="left:610px; top:381px; width:614px; font-size:13.5px; line-height:30px;"><b>工具增强 GUI（Tool-Augmented）</b>　OSWorld-MCP [Jia+, 2025]</div>
+  <div class="abs" style="left:560px; top:432px; width:30px; height:2px; background:#B9A6C0;"></div>
+  <div class="abs" style="left:596px; top:417px; width:636px; height:30px; background:#F6F4F7; border-radius:7px;"></div>
+  <div class="lf" style="left:610px; top:417px; width:614px; font-size:13.5px; line-height:30px;"><b>可验证环境构建（Verifiable Env.）</b>　GUI-Genesis [Cao+, 2026]</div>
+  <div class="abs" style="left:290px; top:548px; width:30px; height:2px; background:#B9A6C0;"></div>
+  <div class="abs" style="left:320px; top:525px; width:210px; height:46px; background:#1E7B5A; border-radius:10px;"></div>
+  <div class="h c" style="left:320px; top:525px; width:210px; font-size:16px; line-height:46px; color:#fff;">走向真实世界</div>
+  <div class="abs" style="left:530px; top:548px; width:30px; height:2px; background:#B9A6C0;"></div>
+  <div class="abs" style="left:560px; top:512px; width:2px; height:74px; background:#B9A6C0;"></div>
+  <div class="abs" style="left:560px; top:512px; width:30px; height:2px; background:#B9A6C0;"></div>
+  <div class="abs" style="left:596px; top:497px; width:636px; height:30px; background:#F6F4F7; border-radius:7px;"></div>
+  <div class="lf" style="left:610px; top:497px; width:614px; font-size:13.5px; line-height:30px;"><b>个人智能体（Personal Agent）</b>　OpenAI dots · Meta Muse · Manus · OpenClaw</div>
+  <div class="abs" style="left:560px; top:548px; width:30px; height:2px; background:#B9A6C0;"></div>
+  <div class="abs" style="left:596px; top:533px; width:636px; height:30px; background:#F6F4F7; border-radius:7px;"></div>
+  <div class="lf" style="left:610px; top:533px; width:614px; font-size:13.5px; line-height:30px;"><b>物理世界生成（Physical World）</b>　SimWorlds · Text2Sim · 4DCodeBench · WorldSolver</div>
+  <div class="abs" style="left:560px; top:584px; width:30px; height:2px; background:#B9A6C0;"></div>
+  <div class="abs" style="left:596px; top:569px; width:636px; height:30px; background:#F6F4F7; border-radius:7px;"></div>
+  <div class="lf" style="left:610px; top:569px; width:614px; font-size:13.5px; line-height:30px;"><b>机器人使用（Robot Use）</b>　RobotWorld [Yang+, 2026] · CaP-X [2026]</div>
 
 </div>
 </body></html>
