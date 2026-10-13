@@ -1,0 +1,36 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"></head>
+<body data-layout="content" data-notes="2026 年初，以 CLI 为主、运行在用户个人电脑上的开源智能体 OpenClaw 迅速普及，给了我们启发。我们把这个观察做成受控实验：在 OSWorld 上固定模型、指令和判官，只把纯视觉智能体换成不观察像素的标准 OpenClaw CLI 智能体，成功率 79.1% 对 77.3%，步数只有一半。这说明纯 GUI 范式并非天然合理。但 CLI 也看不到渲染结果，所以合理的范式是混合：以 CLI 为主干，在需要观察和核验时使用 GUI。问题的关键因此从压缩转向任务范式与能力度量，这就引出了 WeaveBench。">
+<img class="tpl" src="../bg/content.png">
+<div class="slide">
+  <div class="title">三、课题研究内容</div>
+
+  <div class="sub">□ 研究一（续）：范式反思 —— 纯 GUI 范式并非天然合理</div>
+  <div class="sub-l"></div>
+  <div class="chip" style="left:1136px; top:108px; width:96px; padding:0; text-align:center; background:#C0392B;">评测</div>
+  <div class="chip" style="left:1064px; top:108px; width:64px; padding:0; text-align:center; background:#1F6F8B;">GUI</div>
+  <div class="chip" style="left:992px; top:108px; width:64px; padding:0; text-align:center; background:#660874;">CLI</div>
+  <div class="fig" style="left:48px; top:150px; width:700px; height:432px;"></div>
+  <img class="img" src="../img/paradigm3.png" style="left:54px; top:156px; width:688px; height:386px;">
+  <div class="figcap" style="left:54px; top:546px; width:688px;">三种范式对比：纯 GUI 逐步截图；CLI 优先、不观察像素；混合范式以 CLI 为主干、GUI 观察与核验（示意图）</div>
+
+  <div class="fig" style="left:764px; top:150px; width:468px; height:262px;"></div>
+  <div class="h c" style="left:764px; top:160px; width:468px; font-size:13.5px;">受控对照：OSWorld · 同一模型 · 同一判官 [WeaveBench 附录 E]</div>
+  <div class="bar" style="left:830px; top:222px; width:44px; height:150px; background:#660874;"></div>
+  <div class="bar" style="left:880px; top:225px; width:44px; height:147px; background:#1F6F8B;"></div>
+  <div class="t c" style="left:826px; top:202px; width:52px; font-size:12.5px; font-weight:700;">79.1</div>
+  <div class="t c" style="left:876px; top:205px; width:52px; font-size:12.5px; font-weight:700;">77.3</div>
+  <div class="bar" style="left:1070px; top:302px; width:44px; height:70px; background:#660874;"></div>
+  <div class="bar" style="left:1120px; top:230px; width:44px; height:142px; background:#1F6F8B;"></div>
+  <div class="t c" style="left:1066px; top:282px; width:52px; font-size:12.5px; font-weight:700;">14.3</div>
+  <div class="t c" style="left:1116px; top:210px; width:52px; font-size:12.5px; font-weight:700;">29.0</div>
+  <div class="abs" style="left:800px; top:372px; width:396px; height:0; border-top:1.5px solid #D9D9DE;"></div>
+  <div class="t" style="left:822px; top:378px; width:110px; font-size:12px; line-height:1.4; color:#4A4450; text-align:center;">成功率 %</div>
+  <div class="t" style="left:1062px; top:378px; width:110px; font-size:12px; line-height:1.4; color:#4A4450; text-align:center;">平均步数</div>
+  <div class="t c" style="left:764px; top:420px; width:468px; font-size:12.5px; color:#4A4450;"><b style="color:#660874;">■</b> OpenClaw CLI 智能体（不观察像素）　<b style="color:#1F6F8B;">■</b> 纯视觉 GUI 智能体</div>
+  <div class="card amber" style="left:764px; top:452px; width:468px; height:130px;"></div>
+  <div class="t" style="left:780px; top:460px; width:440px; font-size:13.5px; line-height:1.6; color:#1F1A22;"><b style="color:#B7791F;">OpenClaw 的启发（2026 年初）</b>　以 CLI 为主、运行在用户个人电脑上的开源智能体迅速普及。我们以标准 OpenClaw CLI 智能体重跑 OSWorld：成功率相当，步数约减半 —— 大量任务无需逐帧观察屏幕。</div>
+  <div class="kp"></div>
+  <div class="kp-t">结论：关键不在压缩，而在<b>任务范式与能力度量</b> → 定义 CLI 与 GUI 交织的综合数字智能体范式并可信评测</div>
+
+</div>
+</body></html>
