@@ -1,0 +1,55 @@
+<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"></head>
+<body data-layout="content" data-notes="国内外研究可归为四条路线。纯 CLI 能力方法以命令行和代码智能体为代表，精确高效、可验证，但看不见渲染结果。纯 GUI 能力方法以截图和键鼠为通用接口，OSWorld 两年从 12% 升到 80% 以上，但开销高、步数多。混合能力方法开始结合两者，但第二种能力多为辅助、仍只看结果判分。第四类是走向真实世界：个人智能体产品和物理世界生成、机器人使用。共同缺口有三个，正好对应本课题的三项研究。">
+<img class="tpl" src="../bg/content.png">
+<div class="slide">
+  <div class="title">二、国内外研究现状</div>
+
+  <div class="sub">□ 通用数字智能体方法：四类研究路线</div>
+  <div class="sub-l"></div>
+  <div class="abs" style="left:48px; top:150px; width:284px; height:40px; background:#660874; border-radius:8px;"></div>
+  <div class="h c" style="left:48px; top:150px; width:284px; font-size:16.5px; line-height:40px; color:#fff;">纯 CLI 能力方法</div>
+  <div class="t c" style="left:48px; top:196px; width:284px; font-size:12px; line-height:1.4; color:#8A8490;">Terminal-Bench · SWE-agent · OpenClaw</div>
+  <div class="fig" style="left:48px; top:232px; width:284px; height:168px;"></div>
+  <video class="img" src="../video/rabbitmq_5x.mp4" poster="../img/rabbitmq_5x_poster.jpg" controls muted loop playsinline preload="none" style="left:52px; top:236px; width:276px; height:160px;"></video>
+  <div class="card good" style="left:48px; top:410px; width:284px; height:84px;"></div>
+  <div class="t" style="left:58px; top:416px; width:264px; font-size:12.5px; line-height:1.5; color:#1F1A22;"><b style="color:#1E7B5A;">优点</b>　动作精确高效，状态可直接读取；单元测试即可验证，强化学习已规模化</div>
+  <div class="card bad" style="left:48px; top:500px; width:284px; height:84px;"></div>
+  <div class="t" style="left:58px; top:506px; width:264px; font-size:12.5px; line-height:1.5; color:#1F1A22;"><b style="color:#C0392B;">不足</b>　看不见渲染结果；仅覆盖具备命令行或 API 的软件</div>
+
+  <div class="abs" style="left:348px; top:150px; width:284px; height:40px; background:#1F6F8B; border-radius:8px;"></div>
+  <div class="h c" style="left:348px; top:150px; width:284px; font-size:16.5px; line-height:40px; color:#fff;">纯 GUI 能力方法</div>
+  <div class="t c" style="left:348px; top:196px; width:284px; font-size:12px; line-height:1.4; color:#8A8490;">OSWorld · UI-TARS-2 · FastV · SnapKV</div>
+  <div class="fig" style="left:348px; top:232px; width:284px; height:168px;"></div>
+  <img class="img" src="../img/ref_uitars2_demo.png" style="left:352px; top:236px; width:276px; height:160px;">
+  <div class="card good" style="left:348px; top:410px; width:284px; height:84px;"></div>
+  <div class="t" style="left:358px; top:416px; width:264px; font-size:12.5px; line-height:1.5; color:#1F1A22;"><b style="color:#1E7B5A;">优点</b>　截图 + 键鼠为通用接口，可操作任意软件；OSWorld 两年由 12% 升至 80%+</div>
+  <div class="card bad" style="left:348px; top:500px; width:284px; height:84px;"></div>
+  <div class="t" style="left:358px; top:506px; width:264px; font-size:12.5px; line-height:1.5; color:#1F1A22;"><b style="color:#C0392B;">不足</b>　截图累积致开销高、步数多；通用压缩未利用 GUI 结构；缺天然 verifier</div>
+
+  <div class="abs" style="left:648px; top:150px; width:284px; height:40px; background:#B7791F; border-radius:8px;"></div>
+  <div class="h c" style="left:648px; top:150px; width:284px; font-size:16.5px; line-height:40px; color:#fff;">混合能力方法</div>
+  <div class="t c" style="left:648px; top:196px; width:284px; font-size:12px; line-height:1.4; color:#8A8490;">CoAct-1 · OSWorld-MCP · GUI-Genesis</div>
+  <div class="fig" style="left:648px; top:232px; width:284px; height:168px;"></div>
+  <img class="img" src="../img/ref_guigenesis.png" style="left:652px; top:236px; width:276px; height:160px;">
+  <div class="card good" style="left:648px; top:410px; width:284px; height:84px;"></div>
+  <div class="t" style="left:658px; top:416px; width:264px; font-size:12.5px; line-height:1.5; color:#1F1A22;"><b style="color:#1E7B5A;">优点</b>　混合动作空间缩短轨迹；以参考应用为 oracle 构建可验证环境</div>
+  <div class="card bad" style="left:648px; top:500px; width:284px; height:84px;"></div>
+  <div class="t" style="left:658px; top:506px; width:264px; font-size:12.5px; line-height:1.5; color:#1F1A22;"><b style="color:#C0392B;">不足</b>　第二能力多为辅助（+3–5 pp），仅依据结果判分；可验证环境局限于单一界面</div>
+
+  <div class="abs" style="left:948px; top:150px; width:284px; height:40px; background:#1E7B5A; border-radius:8px;"></div>
+  <div class="h c" style="left:948px; top:150px; width:284px; font-size:16.5px; line-height:40px; color:#fff;">走向真实世界</div>
+  <div class="t c" style="left:948px; top:196px; width:284px; font-size:12px; line-height:1.4; color:#8A8490;">dots · Muse · OpenClaw · SimWorlds · RobotWorld</div>
+  <div class="fig" style="left:948px; top:232px; width:138px; height:168px;"></div>
+  <img class="img" src="../img/pp_openclaw.png" style="left:952px; top:236px; width:130px; height:160px;">
+  <div class="fig" style="left:1094px; top:232px; width:138px; height:168px;"></div>
+  <video class="img" src="../video/robot_overview.mp4" poster="../img/robot_overview_poster.jpg" controls muted loop playsinline preload="none" style="left:1098px; top:236px; width:130px; height:160px;"></video>
+  <div class="card good" style="left:948px; top:410px; width:284px; height:84px;"></div>
+  <div class="t" style="left:958px; top:416px; width:264px; font-size:12.5px; line-height:1.5; color:#1F1A22;"><b style="color:#1E7B5A;">优点</b>　个人智能体具备记忆与跨应用执行；Coding Agent 已能生成物理仿真与机器人程序</div>
+  <div class="card bad" style="left:948px; top:500px; width:284px; height:84px;"></div>
+  <div class="t" style="left:958px; top:506px; width:264px; font-size:12.5px; line-height:1.5; color:#1F1A22;"><b style="color:#C0392B;">不足</b>　多在云端通用环境执行，职业特质不鲜明；以"看起来对"为准，缺跨条件物理验证</div>
+
+  <div class="kp"></div>
+  <div class="kp-t">共同缺口：缺少<b>统一范式与过程可信的评测</b>、<b>可验证的混合训练环境</b>，以及<b>面向真实世界的落地验证</b></div>
+
+</div>
+</body></html>
