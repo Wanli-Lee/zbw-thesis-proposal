@@ -1,5 +1,5 @@
 <!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"></head>
-<body data-layout="content" data-notes="研究一是评测。我最初的两项工作是在纯 GUI 范式下做推理效率优化：GUIPruner 在编码端做视觉 token 压缩，ST-Lite 在解码端做 KV Cache 压缩，开销显著下降。但做完之后我们意识到，压缩并没有改变纯 GUI 范式每一步都要处理整屏截图的本质，于是反过来问：这个范式本身是否合理？">
+<body data-layout="content" data-notes="【26 秒】研究一是评测。我最初在纯 GUI 范式下做推理效率优化：GUIPruner 压缩视觉 token，FLOPs 降低 3.4 倍；ST-Lite 压缩 KV 缓存，20% 的预算就能持平完整缓存。但压缩没有改变每一步都要处理整屏截图的本质。">
 <img class="tpl" src="../bg/content.png">
 <div class="slide">
   <div class="title">三、课题研究内容</div>
