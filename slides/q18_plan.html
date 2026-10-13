@@ -1,5 +1,5 @@
 <!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"></head>
-<body data-layout="content" data-notes="【16 秒】后续一年依次完成职业化环境构建、真实数据与任务流水线、物理世界智能体，2027 年 10 月起整合撰写。汇报完毕，请各位老师批评指正。">
+<body data-layout="content" data-notes="【16 秒】后续一年先保证最小交付：两到三个职业的可验证环境与训练；强化学习和物理仿真作为扩展。汇报完毕，请各位老师批评指正。">
 <img class="tpl" src="../bg/content.png">
 <div class="slide">
   <div class="title">四、论文进度安排及预期达到目标</div>
@@ -11,19 +11,19 @@
   <div class="t" style="left:88px; top:156px; width:244px; font-size:14px; font-weight:700; color:#660874; line-height:28px;">2026.10 – 2027.01</div>
   <div class="card soft" style="left:48px; top:192px; width:284px; height:190px;"></div>
   <div class="h" style="left:64px; top:204px; width:252px; font-size:16px; color:#1F1A22;">职业化个人电脑环境构建</div>
-  <div class="t" style="left:64px; top:238px; width:252px; font-size:14px; line-height:1.75; color:#4A4450;">• 会计 / 法律 / 电商 / 医疗 / 设计 / 芯片等职业调研<br>• App Mock：基于复刻能力仿真业务系统<br>• 个人文件、账户与状态数据库</div>
+  <div class="t" style="left:64px; top:238px; width:252px; font-size:14px; line-height:1.75; color:#4A4450;">• 核心职业：财务、电商运营、法律<br>• App Mock：基于复刻能力仿真业务系统<br>• 个人文件、账户与状态数据库</div>
 
   <div class="abs" style="left:364px; top:163px; width:16px; height:16px; border-radius:8px; background:#660874;"></div>
   <div class="t" style="left:388px; top:156px; width:244px; font-size:14px; font-weight:700; color:#660874; line-height:28px;">2027.02 – 2027.05</div>
   <div class="card soft" style="left:348px; top:192px; width:284px; height:190px;"></div>
   <div class="h" style="left:364px; top:204px; width:252px; font-size:16px; color:#1F1A22;">真实数据驱动与任务流水线</div>
-  <div class="t" style="left:364px; top:238px; width:252px; font-size:14px; line-height:1.75; color:#4A4450;">• 脱敏真实数据驱动状态与事件<br>• 任务生成 → 轨迹 → 状态优先 verifier<br>• 拒绝采样 SFT + 可验证奖励 RL</div>
+  <div class="t" style="left:364px; top:238px; width:252px; font-size:14px; line-height:1.75; color:#4A4450;">• 脱敏 / 合成数据驱动状态与事件<br>• 状态优先 verifier 与任务流水线<br>• 拒绝采样 SFT → 可验证奖励 RL</div>
 
   <div class="abs" style="left:664px; top:163px; width:16px; height:16px; border-radius:8px; background:#660874;"></div>
   <div class="t" style="left:688px; top:156px; width:244px; font-size:14px; font-weight:700; color:#660874; line-height:28px;">2027.06 – 2027.09</div>
   <div class="card soft" style="left:648px; top:192px; width:284px; height:190px;"></div>
-  <div class="h" style="left:664px; top:204px; width:252px; font-size:16px; color:#1F1A22;">物理世界智能体</div>
-  <div class="t" style="left:664px; top:238px; width:252px; font-size:14px; line-height:1.75; color:#4A4450;">• 反事实干预基准（RQ1–RQ3）<br>• 物理落地的验证与因果修复<br>• 核心消融；中期检查</div>
+  <div class="h" style="left:664px; top:204px; width:252px; font-size:16px; color:#1F1A22;">物理仿真验证（拓展）</div>
+  <div class="t" style="left:664px; top:238px; width:252px; font-size:14px; line-height:1.75; color:#4A4450;">• 刚体场景反事实干预基准<br>• 验证与因果修复；核心消融<br>• 中期检查</div>
 
   <div class="abs" style="left:964px; top:163px; width:16px; height:16px; border-radius:8px; background:#660874;"></div>
   <div class="t" style="left:988px; top:156px; width:244px; font-size:14px; font-weight:700; color:#660874; line-height:28px;">2027.10 起</div>
@@ -33,9 +33,9 @@
 
   <div class="card" style="left:48px; top:398px; width:1184px; height:150px;"></div>
   <div class="h" style="left:66px; top:410px; width:300px; font-size:16px; color:#1E7B5A;">预期达到目标</div>
-  <div class="t" style="left:66px; top:442px; width:1150px; font-size:15px; line-height:1.8; color:#1F1A22;">• 构建覆盖多个职业的个人电脑可验证环境与 SFT / RL 任务流水线，验证其对职业化个人智能体能力的提升<br>• 建立物理世界生成的反事实干预基准与因果修复方法，验证其对跨条件物理泛化的提升<br>• 形成"评测—训练—应用"的可扩展框架，产出高水平论文并开源基准、环境与代码；完成学位论文</div>
+  <div class="t" style="left:66px; top:442px; width:1150px; font-size:15px; line-height:1.8; color:#1F1A22;">• <b>最小交付</b>：2–3 个职业的可验证个人电脑环境 + SFT 训练与评测，验证跨职业泛化<br>• <b>扩展交付</b>：可验证奖励 RL；刚体物理仿真的反事实干预基准与因果修复<br>• 关键结论在开源模型上复现，开源基准、环境与代码；完成学位论文</div>
   <div class="kp"></div>
-  <div class="kp-t">预期成果：研究三形成 1–2 篇高水平论文（职业化个人智能体；物理世界智能体），开源环境、基准与代码</div>
+  <div class="kp-t">风险预案：职业环境与真实软件存在差距 → 小规模真实软件对照；物理方向受限 → 降级为基准 + 诊断分析</div>
 
 </div>
 </body></html>
