@@ -1,5 +1,5 @@
 <!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"></head>
-<body data-layout="content" data-notes="据此提出三个研究问题：RQ1 物理泛化，RQ2 错误诊断，RQ3 可靠修复。方法是物理落地的验证与因果修复：智能体构建物理世界，执行仿真并记录状态轨迹，由基于干预的 verifier 改变参数与初始条件，结合轨迹、接触状态、物理约束与渲染图定位错误，再定向修复并对原始与干预条件做回归测试。核心消融比较 One-shot、执行反馈、视觉反馈、物理状态反馈和我们的方法。主要科学问题是 Coding Agent 能否构建物理上可泛化的世界；方法贡献是基于干预的反馈能否提升仿真修复。这与主线一致：反事实干预就是一种可扩展的 verifier，修复闭环可以作为训练环境。">
+<body data-layout="content" data-notes="据此提出三个研究问题：RQ1 物理泛化，RQ2 错误诊断，RQ3 可靠修复。方法是基于物理状态与干预测试的验证与定向修复：智能体构建物理世界，执行仿真并记录状态轨迹，由基于干预的 verifier 改变参数与初始条件，结合轨迹、接触状态、物理约束与渲染图定位错误，再定向修复并对原始与干预条件做回归测试。核心消融比较 One-shot、执行反馈、视觉反馈、物理状态反馈和我们的方法。主要科学问题是 Coding Agent 能否构建物理上可泛化的世界；方法贡献是基于干预的反馈能否提升仿真修复。这与主线一致：反事实干预就是一种可扩展的 verifier，修复闭环可以作为训练环境。">
 <img class="tpl" src="../bg/content.png">
 <div class="slide">
   <div class="title">三、课题研究内容</div>
@@ -34,7 +34,7 @@
   <div class="t" style="left:900px; top:460px; width:310px; font-size:13px; line-height:32px; color:#4A4450;">位置、速度、接触、能量</div>
   <div class="abs" style="left:684px; top:496px; width:532px; height:32px; background:#EADCEE; border-radius:6px;"></div>
   <div class="t" style="left:696px; top:496px; width:200px; font-size:13px; line-height:32px; font-weight:700; color:#1F1A22;">Ours</div>
-  <div class="t" style="left:900px; top:496px; width:310px; font-size:13px; line-height:32px; color:#4A4450;">状态 + 干预测试 + 因果修复</div>
+  <div class="t" style="left:900px; top:496px; width:310px; font-size:13px; line-height:32px; color:#4A4450;">状态 + 干预测试 + 定向修复</div>
 
   <div class="t" style="left:684px; top:538px; width:532px; font-size:13px; line-height:1.5; color:#4A4450;">指标：反事实通过率 · 修复成功率 · 回归率 · 成本</div>
   <div class="kp"></div>
