@@ -10,62 +10,60 @@
   <div class="chip" style="left:1064px; top:108px; width:64px; padding:0; text-align:center; background:#1F6F8B;">GUI</div>
   <div class="chip" style="left:992px; top:108px; width:64px; padding:0; text-align:center; background:#660874;">CLI</div>
   <div class="qa" style="left:48px; top:148px; width:1184px; font-size:15px;"><span class="lab">■ 问题：</span>自主编排与自我验证需在<b>能力交织、结果可验证</b>的场景中习得；GUI 缺少天然奖励，现有环境局限于单一界面</div>
-  <div class="qa" style="left:48px; top:176px; width:1184px; font-size:15px;"><span class="lab">■ 解决方法：</span>以<b>应用复刻（App Recreation）</b>为训练场景：对错需运行后视觉核验；<b>以原版应用为验证参照（oracle）</b>，自动生成隐藏行为测试，经审核用于轨迹筛选</div>
-  <div class="fig" style="left:48px; top:214px; width:700px; height:172px;"></div>
-  <img class="img" src="../img/rw_fig2_recreation.png" style="left:54px; top:220px; width:688px; height:126px;">
-  <div class="figcap" style="left:54px; top:350px; width:688px;"><b>RecreationWorld</b>：探索原版 → 实现 → 运行 → 视觉核验</div>
+  <div class="qa" style="left:48px; top:176px; width:1184px; font-size:15px;"><span class="lab">■ 解决方法：</span>以<b>应用复刻（App Recreation）</b>为训练场景，<b>以运行中的原版应用为验证参照（oracle）</b>，自动生成隐藏行为测试筛选轨迹</div>
+  <div class="card soft" style="left:48px; top:214px; width:280px; height:142px;"></div>
+  <div class="num" style="left:64px; top:222px; width:60px; font-size:26px;">①</div>
+  <div class="h p" style="left:110px; top:228px; width:210px; font-size:17px;">复刻任务构造</div>
+  <div class="t" style="left:64px; top:268px; width:250px; font-size:14px; line-height:1.6; color:#1F1A22;">开源 GUI 应用 · 5 平台<br>与评测集去重</div>
+  <div class="t c" style="left:328px; top:268px; width:20px; font-size:20px; color:#81308C;">➜</div>
+  <div class="card soft" style="left:348px; top:214px; width:280px; height:142px;"></div>
+  <div class="num" style="left:364px; top:222px; width:60px; font-size:26px;">②</div>
+  <div class="h p" style="left:410px; top:228px; width:210px; font-size:17px;">轨迹生成</div>
+  <div class="t" style="left:364px; top:268px; width:250px; font-size:14px; line-height:1.6; color:#1F1A22;">Qwen3.8-Max 探索原版 →<br>实现 → 运行 → 视觉核验</div>
+  <div class="t c" style="left:628px; top:268px; width:20px; font-size:20px; color:#81308C;">➜</div>
+  <div class="card soft" style="left:648px; top:214px; width:280px; height:142px;"></div>
+  <div class="num" style="left:664px; top:222px; width:60px; font-size:26px;">③</div>
+  <div class="h p" style="left:710px; top:228px; width:210px; font-size:17px;">可验证筛选</div>
+  <div class="t" style="left:664px; top:268px; width:250px; font-size:14px; line-height:1.6; color:#1F1A22;">隐藏行为测试拒绝采样<br>共 3.5 万条轨迹</div>
+  <div class="t c" style="left:928px; top:268px; width:20px; font-size:20px; color:#81308C;">➜</div>
+  <div class="card soft" style="left:948px; top:214px; width:280px; height:142px;"></div>
+  <div class="num" style="left:964px; top:222px; width:60px; font-size:26px;">④</div>
+  <div class="h p" style="left:1010px; top:228px; width:210px; font-size:17px;">模型后训练</div>
+  <div class="t" style="left:964px; top:268px; width:250px; font-size:14px; line-height:1.6; color:#1F1A22;">SFT：Qwen3.7-Plus 与<br>Qwen-Flash（CPT 初始化）</div>
+  <div class="fig" style="left:48px; top:370px; width:1184px; height:214px;"></div>
+  <div class="t" style="left:62px; top:378px; width:1150px; font-size:12px; color:#4A4450;"><b style="color:#1F1A22;">分布外迁移（首个检查点 → 训练后；各基准指标独立）</b>　<b style="color:#C9A8D0;">■</b><b style="color:#660874;">■</b> Qwen3.7-Plus　<b style="color:#9CC3CF;">■</b><b style="color:#1F6F8B;">■</b> Qwen-Flash（CPT 初始化）　WeaveBench：Qwen3.7-Plus 35.7 → 48.2</div>
+  <div class="bar" style="left:110px; top:469px; width:30px; height:87px; background:#C9A8D0;"></div>
+  <div class="bar" style="left:146px; top:463px; width:30px; height:93px; background:#660874;"></div>
+  <div class="bar" style="left:182px; top:458px; width:30px; height:98px; background:#9CC3CF;"></div>
+  <div class="bar" style="left:218px; top:434px; width:30px; height:122px; background:#1F6F8B;"></div>
+  <div class="t c" style="left:92px; top:412px; width:180px; font-size:13px; color:#1F1A22;"><b>+2.7</b> / <b>+11.4</b></div>
+  <div class="t c" style="left:92px; top:560px; width:180px; font-size:13.5px; color:#4A4450;">ProgramBench</div>
+  <div class="bar" style="left:338px; top:519px; width:30px; height:37px; background:#C9A8D0;"></div>
+  <div class="bar" style="left:374px; top:501px; width:30px; height:55px; background:#660874;"></div>
+  <div class="bar" style="left:410px; top:492px; width:30px; height:64px; background:#9CC3CF;"></div>
+  <div class="bar" style="left:446px; top:457px; width:30px; height:99px; background:#1F6F8B;"></div>
+  <div class="t c" style="left:320px; top:435px; width:180px; font-size:13px; color:#1F1A22;"><b>+8.6</b> / <b>+17.0</b></div>
+  <div class="t c" style="left:320px; top:560px; width:180px; font-size:13.5px; color:#4A4450;">GameCraft</div>
+  <div class="bar" style="left:566px; top:447px; width:30px; height:109px; background:#C9A8D0;"></div>
+  <div class="bar" style="left:602px; top:438px; width:30px; height:118px; background:#660874;"></div>
+  <div class="bar" style="left:638px; top:452px; width:30px; height:104px; background:#9CC3CF;"></div>
+  <div class="bar" style="left:674px; top:435px; width:30px; height:121px; background:#1F6F8B;"></div>
+  <div class="t c" style="left:548px; top:413px; width:180px; font-size:13px; color:#1F1A22;"><b>+4.4</b> / <b>+7.9</b></div>
+  <div class="t c" style="left:548px; top:560px; width:180px; font-size:13.5px; color:#4A4450;">Vision2Web</div>
+  <div class="bar" style="left:794px; top:520px; width:30px; height:36px; background:#C9A8D0;"></div>
+  <div class="bar" style="left:830px; top:518px; width:30px; height:38px; background:#660874;"></div>
+  <div class="bar" style="left:866px; top:497px; width:30px; height:59px; background:#9CC3CF;"></div>
+  <div class="bar" style="left:902px; top:460px; width:30px; height:96px; background:#1F6F8B;"></div>
+  <div class="t c" style="left:776px; top:438px; width:180px; font-size:13px; color:#1F1A22;"><b>+1.0</b> / <b>+17.9</b></div>
+  <div class="t c" style="left:776px; top:560px; width:180px; font-size:13.5px; color:#4A4450;">OSWorld 2.0</div>
+  <div class="bar" style="left:1022px; top:482px; width:30px; height:74px; background:#C9A8D0;"></div>
+  <div class="bar" style="left:1058px; top:455px; width:30px; height:101px; background:#660874;"></div>
+  <div class="bar" style="left:1094px; top:443px; width:30px; height:113px; background:#9CC3CF;"></div>
+  <div class="bar" style="left:1130px; top:430px; width:30px; height:126px; background:#1F6F8B;"></div>
+  <div class="t c" style="left:1004px; top:408px; width:180px; font-size:13px; color:#1F1A22;"><b>+12.5</b> / <b>+6.0</b></div>
+  <div class="t c" style="left:1004px; top:560px; width:180px; font-size:13.5px; color:#4A4450;">WeaveBench</div>
 
-  <div class="fig" style="left:48px; top:394px; width:700px; height:190px;"></div>
-  <div class="t" style="left:62px; top:400px; width:672px; font-size:12px; color:#4A4450;"><b style="color:#1F1A22;">分布外迁移（首个检查点 → 训练后；各基准指标独立）</b>　<b style="color:#C9A8D0;">■</b><b style="color:#660874;">■</b> Qwen3.7-Plus　<b style="color:#9CC3CF;">■</b><b style="color:#1F6F8B;">■</b> Qwen-Flash-CPT</div>
-  <div class="bar" style="left:78px; top:477px; width:20px; height:79px; background:#C9A8D0;"></div>
-  <div class="bar" style="left:102px; top:472px; width:20px; height:84px; background:#660874;"></div>
-  <div class="bar" style="left:126px; top:468px; width:20px; height:88px; background:#9CC3CF;"></div>
-  <div class="bar" style="left:150px; top:446px; width:20px; height:110px; background:#1F6F8B;"></div>
-  <div class="t c" style="left:62px; top:426px; width:128px; font-size:11px; color:#1F1A22;"><b>+2.7</b> / <b>+11.4</b></div>
-  <div class="t c" style="left:62px; top:560px; width:128px; font-size:11.5px; color:#4A4450;">ProgramBench</div>
-  <div class="bar" style="left:212px; top:522px; width:20px; height:34px; background:#C9A8D0;"></div>
-  <div class="bar" style="left:236px; top:506px; width:20px; height:50px; background:#660874;"></div>
-  <div class="bar" style="left:260px; top:498px; width:20px; height:58px; background:#9CC3CF;"></div>
-  <div class="bar" style="left:284px; top:466px; width:20px; height:90px; background:#1F6F8B;"></div>
-  <div class="t c" style="left:196px; top:446px; width:128px; font-size:11px; color:#1F1A22;"><b>+8.6</b> / <b>+17.0</b></div>
-  <div class="t c" style="left:196px; top:560px; width:128px; font-size:11.5px; color:#4A4450;">GameCraft</div>
-  <div class="bar" style="left:346px; top:457px; width:20px; height:99px; background:#C9A8D0;"></div>
-  <div class="bar" style="left:370px; top:449px; width:20px; height:107px; background:#660874;"></div>
-  <div class="bar" style="left:394px; top:462px; width:20px; height:94px; background:#9CC3CF;"></div>
-  <div class="bar" style="left:418px; top:447px; width:20px; height:109px; background:#1F6F8B;"></div>
-  <div class="t c" style="left:330px; top:427px; width:128px; font-size:11px; color:#1F1A22;"><b>+4.4</b> / <b>+7.9</b></div>
-  <div class="t c" style="left:330px; top:560px; width:128px; font-size:11.5px; color:#4A4450;">Vision2Web</div>
-  <div class="bar" style="left:480px; top:523px; width:20px; height:33px; background:#C9A8D0;"></div>
-  <div class="bar" style="left:504px; top:522px; width:20px; height:34px; background:#660874;"></div>
-  <div class="bar" style="left:528px; top:503px; width:20px; height:53px; background:#9CC3CF;"></div>
-  <div class="bar" style="left:552px; top:469px; width:20px; height:87px; background:#1F6F8B;"></div>
-  <div class="t c" style="left:464px; top:449px; width:128px; font-size:11px; color:#1F1A22;"><b>+1.0</b> / <b>+17.9</b></div>
-  <div class="t c" style="left:464px; top:560px; width:128px; font-size:11.5px; color:#4A4450;">OSWorld 2.0</div>
-  <div class="bar" style="left:614px; top:489px; width:20px; height:67px; background:#C9A8D0;"></div>
-  <div class="bar" style="left:638px; top:465px; width:20px; height:91px; background:#660874;"></div>
-  <div class="bar" style="left:662px; top:454px; width:20px; height:102px; background:#9CC3CF;"></div>
-  <div class="bar" style="left:686px; top:442px; width:20px; height:114px; background:#1F6F8B;"></div>
-  <div class="t c" style="left:598px; top:422px; width:128px; font-size:11px; color:#1F1A22;"><b>+12.5</b> / <b>+6.0</b></div>
-  <div class="t c" style="left:598px; top:560px; width:128px; font-size:11.5px; color:#4A4450;">WeaveBench</div>
-
-  <div class="abs" style="left:62px; top:556px; width:672px; height:0; border-top:1.5px solid #D9D9DE;"></div>
-  <div class="card soft" style="left:764px; top:214px; width:468px; height:38px;"></div>
-  <div class="t" style="left:778px; top:214px; width:446px; font-size:13px; line-height:38px; color:#1F1A22;"><b style="color:#660874;">① 任务构造</b>　GitHub 开源 GUI 应用 · 5 平台 · 与评测集去重</div>
-  <div class="card soft" style="left:764px; top:258px; width:468px; height:38px;"></div>
-  <div class="t" style="left:778px; top:258px; width:446px; font-size:13px; line-height:38px; color:#1F1A22;"><b style="color:#660874;">② 轨迹生成</b>　Qwen3.8-Max 并发执行"探索—实现—运行—核验"</div>
-  <div class="card soft" style="left:764px; top:302px; width:468px; height:38px;"></div>
-  <div class="t" style="left:778px; top:302px; width:446px; font-size:13px; line-height:38px; color:#1F1A22;"><b style="color:#660874;">③ 可验证筛选</b>　行为 verifier 拒绝采样，共 3.5 万条轨迹</div>
-  <div class="card soft" style="left:764px; top:346px; width:468px; height:38px;"></div>
-  <div class="t" style="left:778px; top:346px; width:446px; font-size:13px; line-height:38px; color:#1F1A22;"><b style="color:#660874;">④ 模型后训练</b>　SFT Qwen3.7-Plus 与 CPT 后的 Qwen-Flash</div>
-
-  <div class="num " style="left:764px; top:404px; width:230px; font-size:24px;">250 题</div>
-  <div class="cap" style="left:764px; top:434px; width:230px; font-size:12.5px;">RecreationBench · 5 平台</div>
-  <div class="num rd" style="left:1002px; top:404px; width:230px; font-size:24px;">58.1% / 2.8%</div>
-  <div class="cap" style="left:1002px; top:434px; width:230px; font-size:12.5px;">最强模型：测试平均得分 / 通过全部程序化测试的任务占比</div>
-  <div class="num g" style="left:764px; top:494px; width:230px; font-size:24px;">最高 +17.9</div>
-  <div class="cap" style="left:764px; top:524px; width:230px; font-size:12.5px;">分布外基准提升（个百分点）</div>
-  <div class="num g" style="left:1002px; top:494px; width:230px; font-size:24px;">35.7→48.2</div>
-  <div class="cap" style="left:1002px; top:524px; width:230px; font-size:12.5px;">Qwen3.7-Plus · WeaveBench（研究一）</div>
+  <div class="abs" style="left:62px; top:556px; width:1150px; height:0; border-top:1.5px solid #D9D9DE;"></div>
   <div class="kp"></div>
   <div class="kp-t">结论：复刻数据训练在 5 个分布外基准上均带来提升，支持其迁移价值 → <b>研究三推广到真实职业环境</b></div>
 
