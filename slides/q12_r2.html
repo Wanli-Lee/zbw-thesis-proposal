@@ -1,5 +1,5 @@
 <!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"></head>
-<body data-layout="content" data-notes="【30 秒】研究二训练这种行为。我们以应用复刻为场景：对错要运行后看界面，天然需要两类能力交织；原版应用就是 oracle，可自动生成隐藏测试来筛选轨迹。3.5 万条轨迹微调后，分布外基准最高提升 17.9 个点，WeaveBench 从 35.7 升到 48.2。">
+<body data-layout="content" data-notes="【30 秒】研究二训练这种行为。我们以应用复刻为场景：对错要运行后看界面，天然需要两类能力交织；以原版应用为验证参照，自动生成隐藏测试来筛选轨迹。3.5 万条轨迹微调后，分布外基准最高提升 17.9 个点，WeaveBench 从 35.7 升到 48.2。">
 <img class="tpl" src="../bg/content.png">
 <div class="slide">
   <div class="title">三、课题研究内容</div>
@@ -16,9 +16,39 @@
   <div class="figcap" style="left:54px; top:350px; width:688px;"><b>RecreationWorld</b>：探索原版 → 实现 → 运行 → 视觉核验</div>
 
   <div class="fig" style="left:48px; top:394px; width:700px; height:190px;"></div>
-  <img class="img" src="../img/rw_fig5_transfer.png" style="left:54px; top:400px; width:688px; height:144px;">
-  <div class="figcap" style="left:54px; top:548px; width:688px;">已完成：拒绝采样 + SFT；5 个分布外（OOD）基准上两种初始化均超过各自首个评估检查点</div>
+  <div class="t" style="left:62px; top:400px; width:672px; font-size:12px; color:#4A4450;"><b style="color:#1F1A22;">分布外迁移（首个检查点 → 训练后；各基准指标独立）</b>　<b style="color:#C9A8D0;">■</b><b style="color:#660874;">■</b> Qwen3.7-Plus　<b style="color:#9CC3CF;">■</b><b style="color:#1F6F8B;">■</b> Qwen-Flash-CPT</div>
+  <div class="bar" style="left:78px; top:477px; width:20px; height:79px; background:#C9A8D0;"></div>
+  <div class="bar" style="left:102px; top:472px; width:20px; height:84px; background:#660874;"></div>
+  <div class="bar" style="left:126px; top:468px; width:20px; height:88px; background:#9CC3CF;"></div>
+  <div class="bar" style="left:150px; top:446px; width:20px; height:110px; background:#1F6F8B;"></div>
+  <div class="t c" style="left:62px; top:426px; width:128px; font-size:11px; color:#1F1A22;"><b>+2.7</b> / <b>+11.4</b></div>
+  <div class="t c" style="left:62px; top:560px; width:128px; font-size:11.5px; color:#4A4450;">ProgramBench</div>
+  <div class="bar" style="left:212px; top:522px; width:20px; height:34px; background:#C9A8D0;"></div>
+  <div class="bar" style="left:236px; top:506px; width:20px; height:50px; background:#660874;"></div>
+  <div class="bar" style="left:260px; top:498px; width:20px; height:58px; background:#9CC3CF;"></div>
+  <div class="bar" style="left:284px; top:466px; width:20px; height:90px; background:#1F6F8B;"></div>
+  <div class="t c" style="left:196px; top:446px; width:128px; font-size:11px; color:#1F1A22;"><b>+8.6</b> / <b>+17.0</b></div>
+  <div class="t c" style="left:196px; top:560px; width:128px; font-size:11.5px; color:#4A4450;">GameCraft</div>
+  <div class="bar" style="left:346px; top:457px; width:20px; height:99px; background:#C9A8D0;"></div>
+  <div class="bar" style="left:370px; top:449px; width:20px; height:107px; background:#660874;"></div>
+  <div class="bar" style="left:394px; top:462px; width:20px; height:94px; background:#9CC3CF;"></div>
+  <div class="bar" style="left:418px; top:447px; width:20px; height:109px; background:#1F6F8B;"></div>
+  <div class="t c" style="left:330px; top:427px; width:128px; font-size:11px; color:#1F1A22;"><b>+4.4</b> / <b>+7.9</b></div>
+  <div class="t c" style="left:330px; top:560px; width:128px; font-size:11.5px; color:#4A4450;">Vision2Web</div>
+  <div class="bar" style="left:480px; top:523px; width:20px; height:33px; background:#C9A8D0;"></div>
+  <div class="bar" style="left:504px; top:522px; width:20px; height:34px; background:#660874;"></div>
+  <div class="bar" style="left:528px; top:503px; width:20px; height:53px; background:#9CC3CF;"></div>
+  <div class="bar" style="left:552px; top:469px; width:20px; height:87px; background:#1F6F8B;"></div>
+  <div class="t c" style="left:464px; top:449px; width:128px; font-size:11px; color:#1F1A22;"><b>+1.0</b> / <b>+17.9</b></div>
+  <div class="t c" style="left:464px; top:560px; width:128px; font-size:11.5px; color:#4A4450;">OSWorld 2.0</div>
+  <div class="bar" style="left:614px; top:489px; width:20px; height:67px; background:#C9A8D0;"></div>
+  <div class="bar" style="left:638px; top:465px; width:20px; height:91px; background:#660874;"></div>
+  <div class="bar" style="left:662px; top:454px; width:20px; height:102px; background:#9CC3CF;"></div>
+  <div class="bar" style="left:686px; top:442px; width:20px; height:114px; background:#1F6F8B;"></div>
+  <div class="t c" style="left:598px; top:422px; width:128px; font-size:11px; color:#1F1A22;"><b>+12.5</b> / <b>+6.0</b></div>
+  <div class="t c" style="left:598px; top:560px; width:128px; font-size:11.5px; color:#4A4450;">WeaveBench</div>
 
+  <div class="abs" style="left:62px; top:556px; width:672px; height:0; border-top:1.5px solid #D9D9DE;"></div>
   <div class="card soft" style="left:764px; top:214px; width:468px; height:38px;"></div>
   <div class="t" style="left:778px; top:214px; width:446px; font-size:13px; line-height:38px; color:#1F1A22;"><b style="color:#660874;">① 任务构造</b>　GitHub 开源 GUI 应用 · 5 平台 · 与评测集去重</div>
   <div class="card soft" style="left:764px; top:258px; width:468px; height:38px;"></div>
@@ -37,7 +67,7 @@
   <div class="num g" style="left:1002px; top:494px; width:230px; font-size:24px;">35.7→48.2</div>
   <div class="cap" style="left:1002px; top:524px; width:230px; font-size:12.5px;">Qwen3.7-Plus · WeaveBench（研究一）</div>
   <div class="kp"></div>
-  <div class="kp-t">结论：可验证环境中习得的混合行为模式可迁移至分布外任务 → <b>研究三推广到真实世界</b></div>
+  <div class="kp-t">结论：复刻数据训练在 5 个分布外基准上均带来提升，支持其迁移价值 → <b>研究三推广到真实职业环境</b></div>
 
 </div>
 </body></html>

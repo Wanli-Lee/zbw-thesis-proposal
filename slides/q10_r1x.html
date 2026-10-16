@@ -1,5 +1,5 @@
 <!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"></head>
-<body data-layout="content" data-notes="【28 秒】受 2026 年初 OpenClaw 的启发，OSWorld 受控对照显示：不看像素的 CLI 智能体成功率 79.1%，与纯视觉相当，交互次数约一半。但反过来，CLI 看不见渲染结果，需要视觉的任务上 GUI 更强。两类能力互补，关键在于范式与度量。">
+<body data-layout="content" data-notes="【26 秒】受 2026 年初 OpenClaw 的启发，我们在 OSWorld 上做了受控对照：同一模型、同一判官，不看像素的 CLI 智能体成功率 79.1%，与纯视觉的 77.3% 相近。但反过来，仅用 CLI 难以观测渲染结果，需要视觉的任务上 GUI 更强。两类能力互补，关键在于范式与度量。">
 <img class="tpl" src="../bg/content.png">
 <div class="slide">
   <div class="title">三、课题研究内容</div>
@@ -21,21 +21,15 @@
   <div class="bar" style="left:824px; top:233px; width:46px; height:103px; background:#1F6F8B;"></div>
   <div class="t c" style="left:818px; top:213px; width:58px; font-size:12.5px; font-weight:700;">77.3</div>
   <div class="abs" style="left:738px; top:336px; width:160px; height:0; border-top:1.5px solid #D9D9DE;"></div>
-  <div class="t c" style="left:714px; top:340px; width:200px; font-size:11px; color:#8A8490;">同一模型 · 同一判官</div>
-  <div class="h c" style="left:964px; top:188px; width:200px; font-size:12.5px;">每题交互开销（口径不同）</div>
-  <div class="bar" style="left:1004px; top:283px; width:46px; height:53px; background:#660874;"></div>
-  <div class="t c" style="left:998px; top:263px; width:58px; font-size:12.5px; font-weight:700;">14.3</div>
-  <div class="bar" style="left:1074px; top:228px; width:46px; height:108px; background:#1F6F8B;"></div>
-  <div class="t c" style="left:1068px; top:208px; width:58px; font-size:12.5px; font-weight:700;">29.0</div>
-  <div class="abs" style="left:988px; top:336px; width:160px; height:0; border-top:1.5px solid #D9D9DE;"></div>
-  <div class="t c" style="left:964px; top:340px; width:200px; font-size:11px; color:#8A8490;">CLI：模型调用 ｜ GUI：操作回合</div>
+  <div class="t c" style="left:714px; top:340px; width:200px; font-size:11px; color:#8A8490;">gpt-5.5 · 同一判官</div>
+  <div class="t" style="left:950px; top:214px; width:270px; font-size:13px; line-height:1.6; color:#1F1A22;">受控设置：同一环境、同一模型、同一指令与判官，仅更换工具接口；两组均剔除 8 个需凭据任务。<br><b style="color:#660874;">不观察像素的 CLI 智能体取得相近成功率</b></div>
   <div class="t c" style="left:704px; top:366px; width:528px; font-size:12px; color:#4A4450;"><b style="color:#660874;">■</b> OpenClaw CLI 智能体（不观察像素）　<b style="color:#1F6F8B;">■</b> 纯视觉 GUI 智能体</div>
   <div class="card bad" style="left:704px; top:404px; width:528px; height:82px;"></div>
-  <div class="t" style="left:720px; top:410px; width:500px; font-size:13px; line-height:1.55; color:#1F1A22;"><b style="color:#C0392B;">反面：纯 CLI 缺少渲染观测</b>　看不到渲染结果：SWE-bench Multimodal 最佳约 12%；模态对齐任务上 GUI 59.1% 高于 CLI 48.2% [GUI vs. CLI, 2026]</div>
+  <div class="t" style="left:720px; top:410px; width:500px; font-size:13px; line-height:1.55; color:#1F1A22;"><b style="color:#C0392B;">反面：纯 CLI 缺少渲染观测</b>　SWE-bench Multimodal 最佳约 12%；模态对齐任务上 GUI 59.1% 高于 CLI 48.2% [GUI vs. CLI, 2026]</div>
   <div class="card amber" style="left:704px; top:494px; width:528px; height:88px;"></div>
   <div class="t" style="left:720px; top:500px; width:500px; font-size:13px; line-height:1.55; color:#1F1A22;"><b style="color:#B7791F;">OpenClaw 的启发（2026 年初）</b>　以 CLI 为主、运行于个人电脑的智能体提供了实现参考 → 以 CLI 为主干、GUI 负责观察与核验的<b>混合能力范式</b></div>
   <div class="kp"></div>
-  <div class="kp-t">结论：两类能力互补 → 关键在于<b>任务范式与能力度量</b>：只收录二者缺一不可的任务，并审计全过程</div>
+  <div class="kp-t">结论：两类能力互补 → 关键在于<b>任务范式与能力度量</b>：只收录仅用任一通道无法完成的任务，并审计全过程</div>
 
 </div>
 </body></html>
