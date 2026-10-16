@@ -1,5 +1,5 @@
 <!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"></head>
-<body data-layout="content" data-notes="【26 秒】于是我们提出 WeaveBench：只收录单用任一通道都完不成的长程任务，并审计全过程。单用 GUI 仅 1.8%，单用 CLI 3.5%，混合 35.1%；失败主要集中在自主编排与自我验证。">
+<body data-layout="content" data-notes="【26 秒】于是我们提出 WeaveBench：用单通道基线和人工审查筛出需要两类能力协同的长程任务，并审计全过程。单用 GUI 仅 1.8%，单用 CLI 3.5%，混合 35.1%；失败主要集中在自主编排与自我验证。">
 <img class="tpl" src="../bg/content.png">
 <div class="slide">
   <div class="title">三、课题研究内容</div>
@@ -10,10 +10,10 @@
   <div class="chip" style="left:1064px; top:108px; width:64px; padding:0; text-align:center; background:#1F6F8B;">GUI</div>
   <div class="chip" style="left:992px; top:108px; width:64px; padding:0; text-align:center; background:#660874;">CLI</div>
   <div class="qa" style="left:48px; top:148px; width:1184px; font-size:15px;"><span class="lab">■ 问题：</span>现有基准将 CLI 与 GUI 割裂评测，任务可在单一能力内完成；仅依据最终结果判分，难以度量能力协同</div>
-  <div class="qa" style="left:48px; top:176px; width:1184px; font-size:15px;"><span class="lab">■ 解决方法：</span>以已部署的 CLI 智能体运行时为底座、加入轻量桌面控制插件；只收录仅用任一通道无法完成的长程任务；轨迹感知判官审计全过程</div>
+  <div class="qa" style="left:48px; top:176px; width:1184px; font-size:15px;"><span class="lab">■ 解决方法：</span>以已部署的 CLI 智能体运行时为底座、加入轻量桌面控制插件；经单通道基线测试与人工审查，筛选需 CLI 与 GUI 协同的长程任务；轨迹感知判官审计全过程</div>
   <div class="fig" style="left:48px; top:214px; width:684px; height:368px;"></div>
   <img class="img" src="../img/weavepipe.png" style="left:54px; top:220px; width:672px; height:322px;">
-  <div class="figcap" style="left:54px; top:546px; width:672px;"><b>WeaveBench</b>（EMNLP 2026）：任务构造（仅用任一通道无法完成）→ 混合运行时 → 轨迹感知审计（示意图）</div>
+  <div class="figcap" style="left:54px; top:546px; width:672px;"><b>WeaveBench</b>（EMNLP 2026）：任务构造（单通道基线 + 人工审查筛选）→ 混合运行时 → 轨迹感知审计（示意图）</div>
 
   <div class="fig" style="left:748px; top:214px; width:484px; height:226px;"></div>
   <div class="h c" style="left:748px; top:220px; width:484px; font-size:13px;">通道消融：同一设置下成功率（%，Claude Opus 4.7 · OpenClaw）</div>
