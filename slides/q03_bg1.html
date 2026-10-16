@@ -4,29 +4,19 @@
 <div class="slide">
   <div class="title">一、研究背景和选题意义</div>
 
-  <div class="lead" style="left:48px; top:100px; width:1184px;"><span class="p">通用数字智能体</span>（Universal Digital Agent，涵盖计算机操作智能体 CUA）的目标是在真实计算机环境中<span class="k">自主完成长程数字工作</span>，<br>通过<span class="k">CLI 能力</span>（命令行、代码）与<span class="k">GUI 能力</span>（图形界面）的协同感知与操作实现任务闭环。</div>
-  <div class="fig" style="left:48px; top:176px; width:560px; height:404px;"></div>
-  <img class="img" src="../img/wb_fig1.png" style="left:54px; top:182px; width:548px; height:358px;">
-  <div class="figcap" style="left:54px; top:544px; width:548px;">混合轨迹示例：数据分析、游戏开发、网站运维中命令行与图形界面交替使用 [WeaveBench]</div>
+  <div class="lead" style="left:48px; top:100px; width:1184px;"><span class="p">通用数字智能体</span>（Universal Digital Agent，涵盖计算机操作智能体 CUA）旨在真实电脑中<span class="k">自主完成长程数字任务</span>，<br>通过 <span class="k">CLI 能力</span>（命令行与编程）与 <span class="k">GUI 能力</span>（界面感知与交互）的协同实现任务闭环。</div>
+  <div class="fig" style="left:48px; top:176px; width:820px; height:404px;"></div>
+  <img class="img" src="../img/hybridtraj.png" style="left:54px; top:182px; width:808px; height:358px;">
+  <div class="figcap" style="left:54px; top:544px; width:808px;">一条典型混合轨迹：CLI 读日志、改配置、重启服务，GUI 观察页面并核验渲染结果（示意图）</div>
 
-  <div class="card soft" style="left:628px; top:176px; width:604px; height:124px;"></div>
-  <div class="chip" style="left:1132px; top:190px; width:84px; padding:0; text-align:center; background:#660874;">CLI 能力</div>
-  <div class="h p" style="left:646px; top:190px; width:474px; font-size:18px;">命令行操作（Bash）</div>
-  <div class="t" style="left:646px; top:222px; width:568px; font-size:14.5px; line-height:1.5;">以 Shell 命令读写文件、管理进程与服务，直接获取系统状态</div>
-  <div class="t" style="left:646px; top:250px; width:568px; font-size:13px; line-height:1.5; color:#8A8490;">代表工作：Terminal-Bench · OpenClaw</div>
-
-  <div class="card soft" style="left:628px; top:316px; width:604px; height:124px;"></div>
-  <div class="chip" style="left:1132px; top:330px; width:84px; padding:0; text-align:center; background:#660874;">CLI 能力</div>
-  <div class="h p" style="left:646px; top:330px; width:474px; font-size:18px;">代码构建（Coding）</div>
-  <div class="t" style="left:646px; top:362px; width:568px; font-size:14.5px; line-height:1.5;">编写、构建、运行与测试程序，以执行结果作为反馈信号</div>
-  <div class="t" style="left:646px; top:390px; width:568px; font-size:13px; line-height:1.5; color:#8A8490;">代表工作：SWE-bench · Claude Code · Codex</div>
-
-  <div class="card soft" style="left:628px; top:456px; width:604px; height:124px;"></div>
-  <div class="chip" style="left:1132px; top:470px; width:84px; padding:0; text-align:center; background:#1F6F8B;">GUI 能力</div>
-  <div class="h p" style="left:646px; top:470px; width:474px; font-size:18px;">图形界面操作（GUI）</div>
-  <div class="t" style="left:646px; top:502px; width:568px; font-size:14.5px; line-height:1.5;">基于屏幕截图感知界面状态，以鼠标键盘操作任意软件</div>
-  <div class="t" style="left:646px; top:530px; width:568px; font-size:13px; line-height:1.5; color:#8A8490;">代表工作：OSWorld · UI-TARS</div>
-
+  <div class="card soft" style="left:884px; top:176px; width:348px; height:196px;"></div>
+  <div class="chip" style="left:902px; top:192px; background:#660874;">CLI 能力</div>
+  <div class="h p" style="left:902px; top:228px; width:312px; font-size:17px;">命令行与编程</div>
+  <div class="t" style="left:902px; top:258px; width:312px; font-size:13.5px; line-height:1.65; color:#1F1A22;">读写文件、管理服务、编写并运行程序<br><b style="color:#1E7B5A;">优势</b>　精确、高效、结果可验证<br><span class="mut">Terminal-Bench · SWE-bench · OpenClaw</span></div>
+  <div class="card soft" style="left:884px; top:384px; width:348px; height:196px;"></div>
+  <div class="chip" style="left:902px; top:400px; background:#1F6F8B;">GUI 能力</div>
+  <div class="h" style="left:902px; top:436px; width:312px; font-size:17px; color:#1F6F8B;">界面感知与交互</div>
+  <div class="t" style="left:902px; top:466px; width:312px; font-size:13.5px; line-height:1.65; color:#1F1A22;">基于截图感知界面，以键鼠操作软件<br><b style="color:#1E7B5A;">优势</b>　适用于各类图形界面软件，可见渲染结果<br><span class="mut">OSWorld · UI-TARS</span></div>
   <div class="kp"></div>
   <div class="kp-t">两类能力<b>互补而非互替</b>：真实任务要求智能体在同一轨迹中按需选择并切换</div>
 
