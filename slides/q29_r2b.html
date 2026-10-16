@@ -1,5 +1,5 @@
 <!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"></head>
-<body data-layout="content" data-notes="训练流程分四步：从 GitHub 高质量开源应用构造复刻任务，覆盖五个平台并与评测集去重；用 Qwen3.8-Max 在隔离的虚拟机池中并发生成轨迹；用任务级行为 verifier 做拒绝采样，每平台 7000 条、共 3.5 万条；在 Qwen3.7-Plus 和持续预训练后的 Qwen-Flash 上监督微调。结果在五个分布外基准上一致提升，最高 17.9 个百分点；在研究一的 WeaveBench 上从 35.7 提升到 48.2，评测与训练形成闭环。结论是可验证环境中习得的行为可以迁移，引出研究三：推广到真实世界。">
+<body data-layout="content" data-notes="训练流程分四步：从 GitHub 高质量开源应用构造复刻任务，覆盖五个平台并与评测集去重；用 Qwen3.8-Max 在隔离的虚拟机池中并发生成轨迹；用任务级行为 verifier 做拒绝采样，每平台 7000 条、共 3.5 万条；在 Qwen3.7-Plus 和持续预训练后的 Qwen-Flash 上监督微调。结果在五个分布外基准上一致提升，最高 17.9 个百分点；在研究一的 WeaveBench 上从 35.7 提升到 48.2，评测与训练形成闭环。结论是相对首个已评估检查点观察到提升，净贡献与迁移机制待对照确认，引出研究三：推广到真实世界。">
 <img class="tpl" src="../bg/content.png">
 <div class="slide">
   <div class="title">三、课题研究内容</div>
