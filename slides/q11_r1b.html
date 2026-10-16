@@ -1,5 +1,5 @@
 <!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"></head>
-<body data-layout="content" data-notes="【24 秒】于是我们提出 WeaveBench：只收录仅用任一通道都无法完成的长程任务，用轨迹感知判官审计全过程。最佳组合仅 41.2%；只看结果会比审计口径高 10 到 20 个点；失败主要集中在自主编排与自我验证。">
+<body data-layout="content" data-notes="【24 秒】于是我们提出 WeaveBench：只收录仅用任一通道都无法完成的长程任务，用轨迹感知判官审计全过程。单用 GUI 仅 1.8%、单用 CLI 3.5%，混合 35.1%，说明任务确实需要两类能力协同；只看结果会比审计口径高约 10 到 20 个点；失败主要集中在自主编排与自我验证。">
 <img class="tpl" src="../bg/content.png">
 <div class="slide">
   <div class="title">三、课题研究内容</div>
@@ -16,7 +16,7 @@
   <div class="figcap" style="left:54px; top:546px; width:672px;"><b>WeaveBench</b>（EMNLP 2026）：任务构造（仅用任一通道无法完成）→ 混合运行时 → 轨迹感知审计（示意图）</div>
 
   <div class="fig" style="left:748px; top:214px; width:484px; height:226px;"></div>
-  <div class="h c" style="left:748px; top:220px; width:484px; font-size:13px;">通道消融：同一设置下成功率（%）</div>
+  <div class="h c" style="left:748px; top:220px; width:484px; font-size:13px;">通道消融：同一设置下成功率（%，Claude Opus 4.7 · OpenClaw）</div>
   <div class="bar" style="left:830px; top:397px; width:64px; height:7px; background:#1F6F8B;"></div>
   <div class="t c" style="left:818px; top:375px; width:88px; font-size:14px; font-weight:700;">1.8</div>
   <div class="t c" style="left:800px; top:410px; width:124px; font-size:12.5px; color:#4A4450;">仅 GUI</div>
@@ -28,11 +28,11 @@
   <div class="t c" style="left:1040px; top:410px; width:124px; font-size:12.5px; color:#4A4450;">混合</div>
   <div class="abs" style="left:800px; top:404px; width:380px; height:0; border-top:1.5px solid #D9D9DE;"></div>
   <div class="num " style="left:748px; top:456px; width:240px; font-size:26px;">41.2%</div>
-  <div class="cap" style="left:748px; top:488px; width:240px; font-size:12.5px;">最佳模型–运行时组合（OSWorld 成绩仅作背景参考）</div>
+  <div class="cap" style="left:748px; top:488px; width:240px; font-size:12.5px;">最佳模型–运行时组合（Claude Opus 4.7 + Claude Code）</div>
   <div class="num rd" style="left:996px; top:456px; width:236px; font-size:26px;">10–20 pp</div>
   <div class="cap" style="left:996px; top:488px; width:236px; font-size:12.5px;">4 个模型上仅结果判分高于审计口径</div>
   <div class="kp"></div>
-  <div class="kp-t">结论：失败中违规取巧与长程失控占 65.6%，提示<b>自主编排与自我验证</b>是优先改进方向 → 研究二针对其开展训练</div>
+  <div class="kp-t">结论：失败中违规取巧与跨通道执行失控占 65.6%，提示<b>自主编排与自我验证</b>是优先改进方向 → 研究二针对其开展训练</div>
 
 </div>
 </body></html>
