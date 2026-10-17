@@ -41,13 +41,13 @@ body {
 .body { position: absolute; left: 48px; top: 112px; width: 1184px; height: 466px; }
 .kp {
   position: absolute; left: 48px; top: 592px; width: 1184px; height: 46px;
-  background: var(--purple-dark); border-radius: 10px;
+  background: #F3EDF7; border-radius: 10px;
 }
 .kp-t {
   position: absolute; left: 66px; top: 592px; width: 1150px; height: 46px;
-  font-size: 18px; line-height: 46px; color: #fff; font-weight: 500;
+  font-size: 18px; line-height: 46px; color: #3A0745; font-weight: 500;
 }
-.kp-t b { color: #F6C8FF; font-weight: 700; }
+.kp-t b { color: #660874; font-weight: 700; }
 .foot {
   position: absolute; left: 48px; top: 670px; width: 860px; height: 22px;
   font-size: 12.5px; color: var(--muted); line-height: 22px;
