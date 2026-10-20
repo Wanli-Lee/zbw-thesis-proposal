@@ -1,29 +1,35 @@
 <!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="base.css"></head>
-<body data-layout="content" data-notes="纯 CLI 能力方法：动作精确、执行高效，单元测试提供可验证奖励，强化学习已规模化。不足在于无法观测渲染结果，只能处理有接口的软件。">
+<body data-layout="content" data-notes="国内外研究按能力分为三类：纯 CLI、纯 GUI 与混合能力方法。">
 <img class="tpl" src="../bg/content.png">
 <div class="slide">
   <div class="title">二、国内外研究现状</div>
-
-  <div class="sub">□ CLI 能力方法：命令行智能体（Bash Agent）与代码智能体（Coding Agent）</div>
+  <div class="sub">□ 能力方法：纯 CLI、纯 GUI 与混合能力方法</div>
   <div class="sub-l"></div>
-  <div class="chip" style="left:1168px; top:108px; width:64px; padding:0; text-align:center; background:#660874;">CLI</div>
-  <div class="fig" style="left:48px; top:150px; width:372px; height:334px;"></div>
-  <video class="img" src="../video/rabbitmq_5x.mp4" poster="../img/rabbitmq_5x_poster.jpg" autoplay muted loop playsinline style="left:54px; top:156px; width:360px; height:288px;"></video>
-  <div class="figcap" style="left:54px; top:448px; width:360px;">命令行智能体：读日志、改配置、查服务 · 5×</div>
-
-  <div class="fig" style="left:436px; top:150px; width:440px; height:334px;"></div>
-  <img class="img" src="../img/ref_sweagent.png" style="left:442px; top:156px; width:428px; height:288px;">
-  <div class="figcap" style="left:442px; top:448px; width:428px;">SWE-agent：面向智能体的计算机接口 [Yang+, NeurIPS 24]</div>
-
-  <div class="fig" style="left:892px; top:150px; width:340px; height:334px;"></div>
-  <img class="img" src="../img/ref_swegym.png" style="left:898px; top:156px; width:328px; height:288px;">
-  <div class="figcap" style="left:898px; top:448px; width:328px;">SWE-Gym：可执行环境中训练 [Pan+, ICML 25]</div>
-
+  <div class="h c" style="left:48px; top:150px; width:384px; height:36px; line-height:36px; background:#660874; color:#fff; border-radius:8px; font-size:17px;">纯 CLI 能力方法</div>
+  <div class="t c" style="left:48px; top:192px; width:384px; font-size:12px; color:#8A8490;">Terminal-Bench · SWE-agent · SWE-Gym · OpenClaw</div>
+  <div class="fig" style="left:48px; top:212px; width:384px; height:226px;"></div>
+  <video class="img" src="../video/rabbitmq_5x.mp4" poster="../img/rabbitmq_5x_poster.jpg" autoplay muted loop playsinline style="left:56px; top:218px; width:368px; height:122px;"></video><img class="img" src="../img/ref_sweagent.png" style="left:56px; top:344px; width:368px; height:90px;">
+  <div class="card" style="left:48px; top:446px; width:384px; height:64px; background:#F1F8F4; border:1.5px solid #1E7B5A;"></div>
+  <div class="pc" style="left:60px; top:454px; width:360px; font-size:14px;"><span class="ok">优点：</span>动作精确高效，单元测试提供可验证奖励，强化学习已规模化</div>
+  <div class="card" style="left:48px; top:516px; width:384px; height:64px; background:#FDF3F2; border:1.5px solid #C0392B;"></div>
+  <div class="pc" style="left:60px; top:524px; width:360px; font-size:14px;"><span class="no">不足：</span>难以观测渲染结果；依赖命令行或 API</div>
+  <div class="h c" style="left:448px; top:150px; width:384px; height:36px; line-height:36px; background:#1F6F8B; color:#fff; border-radius:8px; font-size:17px;">纯 GUI 能力方法</div>
+  <div class="t c" style="left:448px; top:192px; width:384px; font-size:12px; color:#8A8490;">OSWorld · UI-TARS-2 · FastV · SnapKV</div>
+  <div class="fig" style="left:448px; top:212px; width:384px; height:226px;"></div>
+  <img class="img" src="../img/ref_uitars2_demo.png" style="left:456px; top:218px; width:368px; height:128px;"><img class="img" src="../img/ref_fastv.png" style="left:456px; top:348px; width:368px; height:86px;">
+  <div class="card" style="left:448px; top:446px; width:384px; height:64px; background:#F1F8F4; border:1.5px solid #1E7B5A;"></div>
+  <div class="pc" style="left:460px; top:454px; width:360px; font-size:14px;"><span class="ok">优点：</span>以截图与键鼠为通用接口，适用于各类图形界面软件</div>
+  <div class="card" style="left:448px; top:516px; width:384px; height:64px; background:#FDF3F2; border:1.5px solid #C0392B;"></div>
+  <div class="pc" style="left:460px; top:524px; width:360px; font-size:14px;"><span class="no">不足：</span>截图开销高、步数多；缺少天然可验证信号</div>
+  <div class="h c" style="left:848px; top:150px; width:384px; height:36px; line-height:36px; background:#B7791F; color:#fff; border-radius:8px; font-size:17px;">混合能力方法</div>
+  <div class="t c" style="left:848px; top:192px; width:384px; font-size:12px; color:#8A8490;">CoAct-1 · OSWorld-MCP · GUI-Genesis</div>
+  <div class="fig" style="left:848px; top:212px; width:384px; height:226px;"></div>
+  <img class="img" src="../img/ref_coact.png" style="left:856px; top:218px; width:368px; height:120px;"><img class="img" src="../img/ref_guigenesis.png" style="left:856px; top:342px; width:368px; height:92px;">
+  <div class="card" style="left:848px; top:446px; width:384px; height:64px; background:#F1F8F4; border:1.5px solid #1E7B5A;"></div>
+  <div class="pc" style="left:860px; top:454px; width:360px; font-size:14px;"><span class="ok">优点：</span>混合动作空间缩短轨迹；以参考应用构建可验证环境的思路出现</div>
+  <div class="card" style="left:848px; top:516px; width:384px; height:64px; background:#FDF3F2; border:1.5px solid #C0392B;"></div>
+  <div class="pc" style="left:860px; top:524px; width:360px; font-size:14px;"><span class="no">不足：</span>第二种通道多为辅助；任务多仅依据结果判分</div>
   <div class="kp"></div>
-  <div class="kp-t">CLI 能力<b>无法观测界面</b>：凡依赖渲染结果与视觉反馈的任务，必须引入 GUI 能力</div>
-  <div class="card" style="left:48px; top:492px; width:1184px; height:92px; border:2px solid #C0392B;"></div>
-  <div class="pc" style="left:66px; top:504px; width:1150px;"><span class="ok">优点：</span>动作精确、执行高效，系统状态可直接读取；单元测试提供可验证奖励，强化学习已实现规模化训练</div>
-  <div class="pc" style="left:66px; top:540px; width:1150px;"><span class="no">不足：</span>无法观测渲染结果（SWE-bench Multimodal 最佳仅约 12%）；适用范围受限于具备命令行或 API 的软件</div>
-
+  <div class="kp-t">现有方法或割裂地发展单一能力，或初步混合而缺少<b>统一范式、可信评测与可验证的训练方法</b></div>
 </div>
 </body></html>
